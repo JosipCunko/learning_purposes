@@ -1,0 +1,20 @@
+.blurry-img {
+  background-image: url("/imgs/nature-1--small.jpg");
+  background-size: cover;
+
+  width: 100%;
+  z-index: 1;
+
+  position: relative;
+  filter: blur(0px);
+
+  .loading-text {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+}

@@ -1,0 +1,45 @@
+.message {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  font-family: Poppins;
+
+  border-radius: 9px;
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  translate: -50% 0;
+  transform: translateY(-150%);
+
+  transition: all 0.6s ease-in;
+  z-index: 999999;
+
+  column-gap: 1.4rem;
+  row-gap: 1rem;
+  background-color: #fff;
+  border-left: 10px solid $color-primary;
+  padding: 2rem;
+
+  &__iconbox {
+    grid-column: 1;
+    grid-row: 1/ -1;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    ion-icon {
+      font-size: 3.6rem;
+      color: $color-primary;
+    }
+  }
+  &__title {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+  }
+  &__text {
+    color: #555;
+    font-size: 1.3rem;
+  }
+}

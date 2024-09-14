@@ -1,0 +1,69 @@
+.section-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Poppins";
+
+  transition: 0.4s ease;
+  padding: 6rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(#000, 0.3);
+    z-index: -1;
+  }
+}
+.slider {
+  box-shadow: 0 3px 1rem rgba(#000, 0.15), 0 3px 1rem rgba(0, 0, 0, 0.25);
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  inset: -15vh auto auto -15vw;
+  transition: 0.4s ease;
+  z-index: 1;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &__btn {
+    position: fixed;
+
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 2rem;
+    font-size: 3rem;
+    border: 1px solid $color-secondary-dark;
+    color: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--left {
+      left: calc(15vw - 115px);
+    }
+    &--right {
+      right: calc(15vw - 115px);
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

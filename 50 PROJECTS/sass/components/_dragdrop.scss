@@ -1,0 +1,35 @@
+.section-dragdrop {
+  width: 80rem;
+  max-width: 90%;
+  margin: 4rem auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  // gap: 2rem;
+}
+.dragdrop {
+  &__empty {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    border: 3px solid #000;
+  }
+
+  &__fill {
+    height: 100%;
+    width: 100%;
+    background: url("/imgs/nature-1--small.jpg");
+    background-size: cover;
+  }
+
+  &__onDrag {
+    border: 5px solid $color-primary;
+  }
+  &__boxHovered {
+    scale: 1.1;
+    background-color: $color-primary;
+    border: 5px dashed white;
+  }
+}

@@ -1,0 +1,106 @@
+.section-github {
+  font-family: Poppins;
+  width: 80%;
+  margin: 5rem auto;
+  color: #fff;
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.github {
+  &__main {
+    width: 80rem;
+  }
+  &__form {
+    width: 100%;
+    max-width: 70rem;
+  }
+  &__input {
+    background-color: transparent;
+    width: 100%;
+    font-family: inherit;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 11px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px rgba(154, 180, 195, 0.05),
+      0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: $color-primary-darkest;
+    border: 2px solid $color-primary-darkest;
+
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: $color-primary-darkest;
+    }
+  }
+  &__card {
+    max-width: 80rem;
+    background-color: red;
+    border-radius: 11px;
+    box-shadow: 0 5px 10px rgba(154, 180, 195, 0.05),
+      0 15px 40px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 2.4rem;
+    padding: 3rem;
+    margin: 0 1.5rem;
+    background-color: $color-primary-darkest;
+  }
+  &__img {
+    width: 15rem;
+    object-fit: cover;
+    height: 15rem;
+    border-radius: 50%;
+    border: 8px solid #2a2a72;
+  }
+  &__user {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: start;
+    align-items: center;
+    width: 90%;
+
+    &--text {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      text-wrap: pretty;
+    }
+    &--name {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    &--repos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.2rem;
+      width: 100%;
+    }
+    &--repo {
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: $color-primary-dark;
+      color: #fff;
+    }
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 1.4rem;
+    }
+    &--item {
+      font-size: 1.4rem;
+    }
+  }
+}

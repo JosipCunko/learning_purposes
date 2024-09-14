@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects v1</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/imgs/sass-favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/594bf93c22.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="animated-nav">
+      <ul class="animated-nav__list">
+        <li class="animated-nav__item">
+          <a href="#" class="animated-nav__link">Home</a>
+        </li>
+        <li class="animated-nav__item">
+          <a href="#login" class="animated-nav__link">Login</a>
+        </li>
+        <li class="animated-nav__item">
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox"
+            target="_blank"
+            class="animated-nav__link"
+            >Contact</a
+          >
+        </li>
+        <li class="animated-nav__item">
+          <a href="#movie-app" class="animated-nav__link">Movies</a>
+        </li>
+      </ul>
+      <button class="animated-nav__btn">
+        <div class="animated-nav__line animated-nav__line--1"></div>
+        <div class="animated-nav__line animated-nav__line--2"></div>
+      </button>
+    </nav>
+
+    <main>
+      <div class="nav--circle__container">
+        <div class="nav--circle">
+          <button class="nav--circle__button nav--circle__close">
+            <ion-icon name="close"></ion-icon>
+          </button>
+          <button class="nav--circle__button nav--circle__open">
+            <ion-icon name="apps"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="message">
+        <button class="message__iconbox">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <p class="message__title">Welcome aboard!</p>
+        <p class="message__text">
+          I am excited that you found this page and decided to check it out.
+          Enjoy!
+        </p>
+      </div>
+      <header class="header">
+        <img class="header__img" src="/imgs/laptop-1--small.jpg" alt="Laptop" />
+
+        <img
+          src="/imgs/nature-1--small.jpg"
+          class="header__icon"
+          alt="nature"
+        />
+
+        <h1 class="heading-primary">Cool web components</h1>
+        <p class="header__text">
+          Search for a web component, copy
+          <span>provided VS Code and</span> enjoy. I am sure you will get some
+          inspiration <span>from this and I</span> hope that this made your life
+          easier so you could start creating your dream projects sooner. If page
+          doesn't work or you came across some glitch, please
+          <a href="#">contact me</a><br />
+        </p>
+        <span class="diffblendmode"
+          >Send
+          <a href="https://mail.google.com/mail/u/0/#inbox">email</a> !</span
+        >
+
+        <a
+          href="https://github.com/bradtraversy/50projects50days"
+          class="header__link"
+          target="_blank"
+          >See inspiration on gitHub</a
+        >
+      </header>
+
+      <section class="section-resizable-cards">
+        <div class="resizable-cards__container">
+          <div class="resizable-card blurry-img">
+            <p class="resizable-card__heading">Explore the world</p>
+            <div class="loading-text">0%</div>
+          </div>
+          <div
+            class="resizable-card"
+            style="background-image: url('/imgs/nature-0--small.jpg')"
+          >
+            <p class="resizable-card__heading">Find Your Way</p>
+          </div>
+          <div
+            class="resizable-card"
+            style="background-image: url('/imgs/nature-2--small.jpg')"
+          >
+            <p class="resizable-card__heading">Save The World</p>
+          </div>
+          <div
+            class="resizable-card"
+            style="background-image: url('/imgs/nature-3--small.jpg')"
+          >
+            <p class="resizable-card__heading">Enjoy The World</p>
+          </div>
+          <div
+            class="resizable-card"
+            style="background-image: url('/imgs/people-1--small.jpg')"
+          >
+            <p class="resizable-card__heading">Help The World</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-progress">
+        <div class="progress__slider">
+          <div class="progress__slide">
+            <img src="/imgs/nature-0--small.jpg" alt="Nature" />
+          </div>
+          <div class="progress__slide">
+            <img src="/imgs/nature-1--small.jpg" alt="Nature" />
+          </div>
+          <div class="progress__slide">
+            <img src="/imgs/nature-2--small.jpg" alt="Nature" />
+          </div>
+          <div class="progress__slide">
+            <img src="/imgs/nature-3--small.jpg" alt="Nature" />
+          </div>
+        </div>
+
+        <div class="progress__container">
+          <div class="progress"></div>
+          <div class="progress__number progress__number--active">1</div>
+          <div class="progress__number">2</div>
+          <div class="progress__number">3</div>
+          <div class="progress__number">4</div>
+        </div>
+
+        <div class="progress__buttons">
+          <button class="progress__btn--prev progress__btn" disabled>
+            Prev
+          </button>
+          <button class="progress__btn--next progress__btn">Next</button>
+        </div>
+      </section>
+      <section class="house-info">
+        <div class="house-image">
+          <img src="/imgs/nature-1--small.jpg" alt="Nature" />
+        </div>
+
+        <div class="house-price">
+          <span> $52,000,000</span>
+        </div>
+
+        <ul class="house-list">
+          <li>Chernobyl, Ukraine</li>
+          <li>1058m<sup>2</sup></li>
+          <li>Not allowed entrance</li>
+        </ul>
+      </section>
+      <section class="section-split-landing-page">
+        <div class="split split--left split--active">
+          <h3 class="split__title">PlayStation 5</h3>
+          <a href="#" class="split__btn">Buy Now</a>
+        </div>
+        <div class="split split--right">
+          <h3 class="split__title">Xbox Series X</h3>
+          <a href="#" class="split__btn">Buy Now</a>
+        </div>
+      </section>
+      <section class="section-form--1" id="login">
+        <h3 class="form--1__title">Please Login</h3>
+        <form action="#" class="form--1">
+          <div class="form--1__group">
+            <input
+              type="email"
+              required
+              id="form--1__input--1"
+              class="form--1__input"
+            />
+            <label class="form--1__label" for="form--1__input--1">Email</label>
+          </div>
+          <div class="form--1__group">
+            <input
+              type="current-password"
+              id="form--1__input--2"
+              required
+              minlength="8"
+              class="form--1__input"
+            />
+            <label class="form--1__label" for="form--1__input--2"
+              >Password</label
+            >
+          </div>
+
+          <button class="form--1__btn">Login</button>
+          <p class="form--1__text">
+            Don't have an accout? &rarr; <a href="#">Create one</a>
+          </p>
+        </form>
+      </section>
+      <section class="section-sound-board">
+        <audio id="applause" src="/sounds/applause.mp3"></audio>
+        <audio id="boo" src="/sounds/boo.mp3"></audio>
+        <audio id="gasp" src="/sounds/gasp.mp3"></audio>
+        <audio id="tada" src="/sounds/tada.mp3"></audio>
+        <audio id="victory" src="/sounds/victory.mp3"></audio>
+        <audio id="wrong" src="/sounds/wrong.mp3"></audio>
+
+        <div class="audio__btns"></div>
+      </section>
+      <section class="section-dad-jokes">
+        <div class="dad-jokes__container">
+          <h4 class="dad-jokes__heading">Dont laugh challenge</h4>
+          <div class="dad-joke" id="joke">//JOKE HERE</div>
+          <button id="jokeBtn" class="dad-joke__btn">Get another joke</button>
+        </div>
+      </section>
+      <section class="section-faq">
+        <div class="faq faq--active">
+          <h3 class="faq__title">Why shouldn't we trust atoms?</h3>
+          <p class="faq__text">They make up everything.</p>
+          <button class="faq__btn">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq__title">Why dont eggs tell jokes?</h3>
+          <p class="faq__text">They'd crack each other up.</p>
+          <button class="faq__btn">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq__title">What’s brown and sounds like a bell?</h3>
+          <p class="faq__text">Dung!</p>
+          <button class="faq__btn">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq__title">What is the best way to carve?</h3>
+          <p class="faq__text">Whittle by whittle</p>
+          <button class="faq__btn">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+      <section class="section-random-choice" id="random-choice">
+        <h4 class="random-choice__heading">
+          Enter all of the choices divided by a comma(",") <br />Press ENTER
+          when you are done
+        </h4>
+        <textarea
+          class="random-choice__textarea"
+          placeholder="Enter choices here..."
+        ></textarea>
+        <div class="random-choice__tags"></div>
+      </section>
+      <section class="section-increment-counter" id="counter">
+        <div class="increment-counter">
+          <i class="fab fa-twitter fa-3x"></i>
+          <div class="counter" data-target="12000"></div>
+          <span class="counter--followers">Twitter Followers</span>
+        </div>
+        <div class="increment-counter">
+          <i class="fab fa-youtube fa-3x"></i>
+          <div class="counter" data-target="5000"></div>
+          <span class="counter--followers">Youtube Followers</span>
+        </div>
+        <div class="increment-counter">
+          <i class="fab fa-instagram fa-3x"></i>
+          <div class="counter" data-target="7200"></div>
+          <span class="counter--followers">Instagram Followers</span>
+        </div>
+      </section>
+      <section class="section-water">
+        <h4 class="water__title">Drink Water</h4>
+        <h5 class="water__goal">Goal: 2 Liters</h5>
+
+        <div class="water__cup">
+          <div class="water__remaining">
+            <span class="water__liters"></span>
+            <small>Remained</small>
+          </div>
+
+          <div class="water__percentage"></div>
+        </div>
+        <p class="water__text">
+          Select how many glasses of water you have drank
+        </p>
+
+        <div class="water__cups">
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+          <div class="water__cup water__cup--small">250ml</div>
+        </div>
+      </section>
+
+      <section class="section-movie" id="movie-app">
+        <div class="movie__header">
+          <button class="movie__clock--btn">Dark mode</button>
+          <span class="ripple">Movie app</span>
+          <div class="section-card-border">
+            <div class="card-border">
+              <h5 class="card-border__title">01</h5>
+            </div>
+          </div>
+          <div class="movie__clock">
+            <div class="movie__clock--container">
+              <div class="movie__clock--box">
+                <div class="movie__clock--needle movie__clock--needle--h"></div>
+                <div
+                  class="movie__clock--needle movie__clock--needle--min"
+                ></div>
+                <div
+                  class="movie__clock--needle movie__clock--needle--sec"
+                ></div>
+                <div class="movie__clock--center"></div>
+              </div>
+
+              <div class="movie__clock--time">12:00</div>
+              <div class="movie__clock--date">Monday, Nov <span>30</span></div>
+            </div>
+          </div>
+          <form action="#" class="movie__form">
+            <input type="text" class="movie__search" placeholder="Search" />
+            <a href="#login" class="movie__link--neon">Login</a>
+          </form>
+        </div>
+        <div class="movie__main"></div>
+      </section>
+
+      <section class="section-waves"></section>
+      <section class="section-blob">
+        <div class="blob__text">
+          Build a Curvaceuos Homepage // Wavy Background Tutorial with SVG and
+          CSS --- Fireship from Youtube<br />
+          Websites used:
+          <a href="https://app.haikei.app/">haikei.app</a>,
+          <a href="https://thednp.github.io/kute.js/svgMorph.html">KUTE.js</a>
+          <br />
+          See also websites: <a href="https://www.animaker.com/">Animaker</a>,
+          <a href="https://www.shapedivider.app/">shapedvider.app</a>,
+          <a href="https://9elements.github.io/fancy-border-radius/"
+            >Fancy Border Radius Generator</a
+          >
+        </div>
+
+        <div class="blob">
+          <svg
+            id="visual"
+            viewBox="0 0 960 300"
+            width="960"
+            height="300"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g transform="translate(481.96273237744197 141.79912229927962)">
+              <path
+                id="blob--1"
+                d="M75.6 -92.4C96.4 -89 110.5 -64.7 105.7 -43C100.9 -21.2 77.2 -1.9 63.9 15.1C50.6 32.1 47.6 46.8 38.7 60.7C29.8 74.7 14.9 87.8 -7.2 97.8C-29.4 107.8 -58.8 114.6 -76.8 103.6C-94.9 92.6 -101.7 63.9 -106.2 37.5C-110.6 11 -112.9 -13.2 -107.1 -36C-101.4 -58.9 -87.7 -80.4 -68.6 -84.4C-49.4 -88.3 -24.7 -74.6 1.4 -76.5C27.4 -78.4 54.9 -95.8 75.6 -92.4"
+                fill="#339af0"
+              ></path>
+            </g>
+            <g
+              transform="translate(503.1332538464532 162.07893331913317)"
+              style="visibility: hidden"
+            >
+              <path
+                id="blob--2"
+                d="M47.8 -79.7C58.5 -58.1 61.1 -39.4 66.1 -22C71 -4.5 78.3 11.6 73.2 22.7C68.1 33.7 50.6 39.6 36.3 54.6C22 69.7 11 93.8 -7.2 103.8C-25.5 113.7 -50.9 109.4 -64.6 94.2C-78.2 79 -80 52.8 -90.7 27.6C-101.4 2.5 -121.1 -21.6 -121.2 -44.9C-121.3 -68.2 -101.8 -90.8 -78.3 -108.1C-54.9 -125.5 -27.4 -137.8 -4.4 -131.7C18.6 -125.6 37.2 -101.2 47.8 -79.7"
+                fill="#339af0"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="blob--radius">
+          <img class="blob__img" src="/imgs/people-1--small.jpg" alt="People" />
+        </div>
+      </section>
+      <section class="section-waves section-waves--flip"></section>
+      <section class="section-slider">
+        <div class="slider">
+          <div
+            class="slide"
+            style="background-image: url('/imgs/nature-0--small.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('/imgs/nature-1--small.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('/imgs/nature-2--small.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('/imgs/nature-3--small.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('/imgs/laptop-1--small.jpg')"
+          ></div>
+
+          <button class="slide__btn slide__btn--left">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <button class="slide__btn slide__btn--right">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+      <section class="section-dragdrop">
+        <div class="dragdrop__empty">
+          <div class="dragdrop__fill" draggable="true"></div>
+        </div>
+        <div class="dragdrop__empty"></div>
+        <div class="dragdrop__empty"></div>
+        <div class="dragdrop__empty"></div>
+        <div class="dragdrop__empty"></div>
+      </section>
+      <a
+        href="https://github.com/bradtraversy/50projects50days/tree/master/drawing-app"
+        style="font-size: 2rem"
+        target="_blank"
+        >Drawing app</a
+      >
+      <div class="kinetic-loader__text">
+        Kinetic Loader
+
+        <div class="kinetic-loader"></div>
+      </div>
+
+      <section class="section-card__loading">
+        <div class="card__loading">
+          <div class="card__loading--img card__loading--bg">&nbsp;</div>
+          <div class="card__loading--content">
+            <h3
+              class="card__loading--title card__loading--bg card__loading--text"
+            >
+              &nbsp;
+            </h3>
+            <p class="card__loading--details">
+              <span class="card__loading--text card__loading--bg">&nbsp;</span>
+              <span class="card__loading--text card__loading--bg">&nbsp;</span>
+              <span class="card__loading--text card__loading--bg">&nbsp;</span>
+            </p>
+            <div class="card__loading--author">
+              <div class="card__loading--author__img card__loading--bg">
+                &nbsp;
+              </div>
+              <div class="card__loading--author__info">
+                <strong class="card__loading--text card__loading--bg"
+                  >&nbsp;</strong
+                >
+                <small class="card__loading--text card__loading--bg"
+                  >&nbsp;</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-github">
+        <form action="#" class="github__form">
+          <input
+            type="text"
+            placeholder="Search a GitHub User"
+            class="github__input"
+          />
+        </form>
+        <div class="github__main"></div>
+      </section>
+    </main>
+    <!-- THIS NEEDS TO BE LAST BECAUSE ROTATING NAV WONT WORK, CANT DO IT WITH :has selector -->
+    <nav class="nav--rotated">
+      <ul class="nav--rotated__list">
+        <li class="nav--rotated__item">
+          <ion-icon name="home"></ion-icon>
+          <a class="nav--rotated__link" href="#">Home</a>
+        </li>
+        <li class="nav--rotated__item">
+          <ion-icon name="person"></ion-icon>
+          <a class="nav--rotated__link" href="#">About</a>
+        </li>
+        <li class="nav--rotated__item">
+          <ion-icon name="mail-open"></ion-icon>
+          <a class="nav--rotated__link" href="#">Contact</a>
+        </li>
+        <li class="nav--rotated__item hidden-searchbar">
+          <input
+            type="text"
+            class="hidden-searchbar__input"
+            placeholder="Search..."
+          />
+          <button class="hidden-searchbar__button">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

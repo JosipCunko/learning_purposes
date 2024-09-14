@@ -1,0 +1,51 @@
+.section-resizable-cards {
+  margin-top: 4.4rem;
+  display: grid;
+  place-items: center;
+}
+.resizable-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1.4rem;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 480px) {
+  .resizable-cards__container {
+    max-width: 200%;
+  }
+}
+.resizable-card {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  border-radius: 11px;
+  cursor: pointer;
+  flex: 0.5;
+  z-index: 10000;
+
+  transition: flex 0.6s ease-in;
+
+  &__heading {
+    position: absolute;
+    bottom: 2rem;
+    font-weight: 600;
+    left: 2rem;
+    z-index: 1;
+    font-size: 2.4rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+    color: #fff;
+  }
+  &--active {
+    flex: 5;
+
+    & p {
+      opacity: 1;
+    }
+  }
+}

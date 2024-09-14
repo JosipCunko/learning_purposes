@@ -1,0 +1,89 @@
+.animated-nav {
+  background-color: #fff;
+  position: fixed;
+  right: 2%;
+  top: 3%;
+  padding: 2rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear;
+  overflow-x: hidden;
+  z-index: 99990;
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+  }
+  &__item {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+  &__link:link,
+  &__link:visited {
+    position: relative;
+    color: $color-primary;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-light;
+    text-decoration: underline;
+  }
+  &__btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+  &__line {
+    background-color: $color-primary;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 5px;
+    transition: transform 0.6s linear;
+    &--2 {
+      top: auto;
+      bottom: 1rem;
+    }
+  }
+}
+
+.animated-nav.animated-nav--active {
+  width: 35rem;
+
+  .animated-nav__list {
+    width: 100%;
+  }
+  .animated-nav__item {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+
+  .animated-nav__line--1 {
+    transform: rotate(765deg) translateY(5.5px);
+  }
+
+  .animated-nav__line--2 {
+    transform: rotate(-765deg) translateY(-5.5px);
+  }
+}

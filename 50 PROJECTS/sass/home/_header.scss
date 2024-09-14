@@ -1,0 +1,127 @@
+.header {
+  height: 80vh;
+  width: 110vw;
+  translate: -12%;
+
+  font-size: 1.4rem;
+  color: $color-white;
+  padding-inline: 1.6rem;
+  position: relative;
+
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.2rem;
+  text-align: end;
+  font-weight: 600;
+  margin-bottom: 8rem;
+
+  &__icon {
+    z-index: 2;
+    width: 12rem;
+    height: 12rem;
+
+    // -webkit-mask-image: url("/imgs/factory.svg");
+    mask-image: url("/imgs/factory.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 100vh;
+    border-radius: 11px;
+    translate: 0 -20%;
+
+    mask-image: linear-gradient(black 0%, transparent 90%);
+  }
+
+  .heading-primary {
+    z-index: 2;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+  }
+
+  &__text {
+    max-width: 50ch;
+    color: #555;
+    line-height: 1.4;
+    z-index: 2;
+    font-weight: 500;
+
+    a:link,
+    a:visited {
+      color: inherit;
+      text-decoration: underline;
+      transition: all 0.3s;
+    }
+    a:hover,
+    a:active {
+      color: #777;
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+    margin-top: 2.4rem;
+    padding: 1.2rem 2.4rem 1.4rem;
+    border-radius: 11px;
+    background-color: $color-secondary;
+    z-index: 2;
+    transition: all 0.3s;
+  }
+  &__link:hover {
+    box-shadow: 0 4px 15px rgba(#000, 0.3);
+    animation: pulse 0.5s linear infinite;
+  }
+  &__link:active {
+    translate: 0 6px;
+  }
+  .diffblendmode {
+    font-family: "Pacifico";
+    font-size: 2rem;
+    position: relative;
+    color: #555;
+
+    a:link,
+    a:visited {
+      position: relative;
+      color: $color-secondary;
+      text-decoration: none;
+      padding: 0 0.25rem 0.4rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background-color: currentColor;
+        transform: scaleY(0.1);
+        transform-origin: 0 100%;
+        transition: all 0.3s;
+        mix-blend-mode: difference;
+      }
+    }
+    a:hover,
+    a:active {
+      &::after {
+        transform: none;
+      }
+    }
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+}

@@ -1,0 +1,26 @@
+.section-increment-counter {
+  font-family: Poppins;
+  background-color: $color-primary;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-items: center;
+  gap: 4.4em;
+}
+.increment-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.counter {
+  font-size: 6rem;
+  font-weight: 600;
+}

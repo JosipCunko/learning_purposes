@@ -1,0 +1,89 @@
+.section-split-landing-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 55vw;
+}
+
+.split {
+  overflow: hidden;
+  font-family: "Poppins";
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: #fff;
+    white-space: nowrap;
+
+    @include responsive(800px) {
+      font-size: 2rem;
+    }
+  }
+  &__btn:link,
+  &__btn:visited {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    padding: 1.5rem 4rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include responsive(800px) {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__btn:active {
+    translate: 0 1px;
+  }
+  &--left {
+    left: 0;
+    background-image: url("/imgs/ps.jpg");
+
+    &::before {
+      background-color: rgba(87, 84, 236, 0.7);
+    }
+    .split__btn:hover,
+    .split__btn:active {
+      background-color: rgb(87, 84, 236);
+      border-color: rgb(87, 84, 236);
+    }
+  }
+  &--right {
+    right: 0;
+    background-image: url("/imgs/xbox.jpg");
+
+    &::before {
+      background-color: rgba(102, 102, 102, 0.8);
+      background-color: rgba(119, 201, 119, 0.8);
+    }
+    .split__btn:hover,
+    .split__btn:active {
+      background-color: rgb(28, 122, 28);
+      border-color: rgb(28, 122, 28);
+    }
+  }
+}

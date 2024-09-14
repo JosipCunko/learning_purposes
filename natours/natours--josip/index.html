@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natours</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css copy/general.css" />
+    <link rel="stylesheet" href="/css copy/natours.css" />
+    <link rel="stylesheet" href="/css copy/natoursResponsive.css" />
+    <link rel="stylesheet" href="/css copy/pagination.css" />
+    <!-- <link rel="stylesheet" href="/css copy/style.css" /> -->
+
+    <script defer src="/scriptPagination.js"></script>
+    <script defer src="/scriptNatours.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <!--CLOSING AND OPNEING NAV WITH CHEKBOX-->
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#natours__about"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#natours__features"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#natours__tours"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#natours__stories"
+              ><span>04</span>Stories</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#natours__footer"
+              ><span>05</span>Other pages</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="logo--natours"
+          src="/imgs/logo-white.png"
+          alt="Natours logo"
+        />
+      </div>
+      <h1 class="heading-primary-natours">OUTDOORS</h1>
+      <p class="header__description">is where life happens</p>
+      <div class="header-btns">
+        <a href="#" class="btn--natoursStyle">discover our tours</a>
+      </div>
+    </header>
+    <main>
+      <section class="section-about" id="natours__about">
+        <h2 class="heading u-marbot-big">
+          exciting tours for adventurous people
+        </h2>
+        <div class="grid grid--2-cols martop-small">
+          <div class="about__text-container">
+            <div class="about__text">
+              <h3 class="about__heading-tertiary">
+                YOU ARE GOING TO FALL IN LOVE WITH NATURE
+              </h3>
+              <p class="about__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis odio harum laboriosam odit, ad dignissimos sit
+                velit impedit vitae sint, doloribus architecto! Vel repellendus
+                reprehenderit esse velit perspiciatis qui. Tenetur!
+              </p>
+            </div>
+            <div class="about__text">
+              <h3 class="about__heading-tertiary">
+                Live adventures like you never have before
+              </h3>
+              <p class="about__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores nulla deserunt voluptatum nam.
+              </p>
+            </div>
+            <a href="#" class="natours__link">Learn more &rarr;</a>
+          </div>
+          <div class="about__imgs">
+            <img
+              class="about__img about__img-1"
+              src="/imgs/nature-2.jpg"
+              alt="About OUTDOORS image"
+            />
+            <img
+              class="about__img about__img-2"
+              src="/imgs/nature-1.png"
+              alt="About OUTDOORS image"
+            />
+            <img
+              class="about__img about__img-3"
+              src="/imgs/nature-3.jpg"
+              alt="About OUTDOORS image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="natours__features">
+        <div class="features__grid">
+          <div class="feature__card">
+            <div class="feature__icon-box">
+              <ion-icon class="feature__icon" name="globe-outline"></ion-icon>
+            </div>
+            <p class="feature__heading">explore the world</p>
+            <p class="feature__description">
+              Aperiam officiis assumenda debitis, amet harum deserunt totam rem
+              tempora consectetur veritatis.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__icon-box">
+              <ion-icon class="feature__icon" name="leaf-outline"></ion-icon>
+            </div>
+            <p class="feature__heading">Meet nature</p>
+            <p class="feature__description">
+              Aperiam officiis assumenda debitis, amet harum deserunt totam rem
+              tempora consectetur veritatis.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__icon-box">
+              <ion-icon class="feature__icon" name="map-outline"></ion-icon>
+            </div>
+            <p class="feature__heading">find you way</p>
+            <p class="feature__description">
+              Aperiam officiis assumenda debitis, amet harum deserunt totam rem
+              tempora consectetur veritatis.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__icon-box">
+              <ion-icon class="feature__icon" name="heart-outline"></ion-icon>
+            </div>
+            <p class="feature__heading">live a healthier life</p>
+            <p class="feature__description">
+              Aperiam officiis assumenda debitis, amet harum deserunt totam rem
+              tempora consectetur veritatis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-tours" id="natours__tours">
+        <h2 class="heading tour__heading-main u-marbot-big">
+          Most popular tours
+        </h2>
+        <div class="container-tours">
+          <div class="tours__grid">
+            <div class="card__container">
+              <div class="tour__card">
+                <div class="tour__card-side card__side--front">
+                  <div class="tour__img-box tour__img--1">&nbsp;</div>
+                  <h3 class="tour__heading">
+                    <span class="tour__heading--span-1">The sea explorer</span>
+                  </h3>
+                  <ul class="tour__text">
+                    <li>3 day tours</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guides</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty: easy</li>
+                  </ul>
+                </div>
+                <div
+                  class="tour__card-side card__side--back card__side--back-1"
+                >
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-only">Only</p>
+                      <p class="card__price-value">$297</p>
+                    </div>
+                    <a href="#popup" class="btn--natoursStyle c btn--tour__card"
+                      >Book now!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__container">
+              <div class="tour__card">
+                <div class="tour__card-side card__side--front">
+                  <div class="tour__img-box tour__img--2">&nbsp;</div>
+                  <h3 class="tour__heading">
+                    <span class="tour__heading--span-2">The forest hiker</span>
+                  </h3>
+                  <ul class="tour__text">
+                    <li>7 day tours</li>
+                    <li>Up to 40 people</li>
+                    <li>6 tour guides</li>
+                    <li>Sleep in provided tents</li>
+                    <li>Difficulty: medium</li>
+                  </ul>
+                </div>
+                <div
+                  class="tour__card-side card__side--back card__side--back-2"
+                >
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-only">Only</p>
+                      <p class="card__price-value">$297</p>
+                    </div>
+                    <a href="#popup" class="btn--natoursStyle btn--tour__card"
+                      >Book now!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__container">
+              <div class="tour__card">
+                <div class="tour__card-side card__side--front">
+                  <div class="tour__img-box tour__img--3">&nbsp;</div>
+                  <h3 class="tour__heading">
+                    <span class="tour__heading--span-3"
+                      >The snow adventurer</span
+                    >
+                  </h3>
+                  <ul class="tour__text">
+                    <li>5 day tours</li>
+                    <li>Up to 15 people</li>
+                    <li>3 tour guides</li>
+                    <li>Sleep in provided tents</li>
+                    <li>Difficulty: hard</li>
+                  </ul>
+                </div>
+                <div
+                  class="tour__card-side card__side--back card__side--back-3"
+                >
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <p class="card__price-only">Only</p>
+                      <p class="card__price-value">$297</p>
+                    </div>
+                    <a href="#popup" class="btn--natoursStyle c btn--tour__card"
+                      >Book now!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-stories" id="natours__stories">
+        <video class="story__video" autoplay muted loop>
+          <source
+            src="/videos/coverr-temp-ewik5f07ba6f-8811-4687-8251-11c2977063e7-mp4-2576-1080p.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 class="heading">We make people genuinely happy</h2>
+        <div class="stories-container">
+          <div class="story">
+            <figure class="story__img-box">
+              <img
+                class="story__img"
+                src="/imgs/testimonial-author-img-2.jpeg"
+                alt="Story author 1"
+              />
+
+              <figcaption class="story__author">Drew Watkins</figcaption>
+            </figure>
+            <div class="story__text-box">
+              <h3 class="story__title">
+                I had the best week ever with my family
+              </h3>
+              <p class="story__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti accusantium, quod laudantium fugit obcaecati
+                praesentium deleniti quia, dolorem quis possimus, asperiores
+                sapiente voluptates voluptatem natus!sapiente voluptates
+                voluptatem natus!sapiente voluptates voluptatem natus!
+              </p>
+            </div>
+          </div>
+          <div class="story">
+            <figure class="story__img-box">
+              <img
+                class="story__img"
+                src="/imgs/testimonial-author-img-3.jpg"
+                alt="Story author 2"
+              />
+              <figcaption class="story__author">Mary Adams</figcaption>
+            </figure>
+            <div class="story__text-box">
+              <h3 class="story__title">
+                WOW! My life is completely different now
+              </h3>
+              <p class="story__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti accusantium, quod laudantium fugit obcaecati
+                praesentium deleniti quia, dolorem quis possimus, asperiores
+                sapiente voluptates voluptatem natus!sapiente voluptates
+                voluptatem natus!sapiente voluptates voluptatem natus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="stories__links">
+          <a class="natours__link" href="#">See all stories &rarr;</a>
+        </div>
+      </section>
+      <section class="section-cta-form">
+        <div class="cta-box">
+          <form action="#" class="natours__form">
+            <div class="u-margin-bottom-medium">
+              <h2 class="form__heading">Start booking now</h2>
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                required
+                id="fullname"
+                class="form__input"
+                placeholder="Full name"
+              />
+              <label for="email" class="form__label">Full name</label>
+            </div>
+            <div class="form__group">
+              <input
+                type="email"
+                required
+                class="form__input"
+                id="email"
+                placeholder="Email address"
+              />
+              <label for="email" class="form__label">Email address</label>
+            </div>
+
+            <div class="form__group">
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  class="form__radio-input"
+                  id="small-tour"
+                  name="tour-quantity"
+                />
+                <label class="form__radio-label" for="small-tour">
+                  <span class="form__radio-button"></span>
+                  Small tour group</label
+                >
+              </div>
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  class="form__radio-input"
+                  id="large-tour"
+                  name="tour-quantity"
+                />
+                <label class="form__radio-label" for="large-tour">
+                  <span class="form__radio-button"></span>
+                  Large tour group</label
+                >
+              </div>
+            </div>
+
+            <div class="form__group">
+              <button class="btn--natoursStyle u-margin-none form__btn-submit">
+                Next step &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <section class="section-pagination">
+      <div class="pagination"></div>
+    </section>
+    <footer class="natours__footer" id="natours__footer">
+      <div class="natours__footer-logos">
+        <img
+          class="natours__footer-logo"
+          src="/imgs/logo-green-2x.png"
+          alt="Natours logo"
+        />
+      </div>
+      <div class="footer__table">
+        <ul class="natours__links">
+          <li><a class="natours__footer-link" href="#">Company</a></li>
+          <li><a class="natours__footer-link" href="#">Contact us</a></li>
+          <li><a class="natours__footer-link" href="#">Careers</a></li>
+          <li><a class="natours__footer-link" href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="natours__copyright">
+          Design by
+          <span
+            ><a href="#" class="natours__footer-link"
+              >Jonas Schmedtmann</a
+            > </span
+          >from his online course
+          <span
+            ><a href="#" class="natours__footer-link"
+              >Advanced CSS and Sass.</a
+            ></span
+          >
+          Built from scratch by Josip Čunko.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

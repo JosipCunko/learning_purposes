@@ -1,0 +1,207 @@
+/*ROTATING NAV*/
+
+main {
+  background-color: #fff;
+  transform-origin: top left;
+  transition: rotate 0.5s linear;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 3rem 5rem 3rem 3rem;
+
+  &.nav--circle__container--active {
+    rotate: -20deg;
+
+    & + .nav--rotated .nav--rotated__item {
+      transform: translateX(0);
+      transition-delay: 0.3s;
+    }
+    & + .nav--rotated {
+      visibility: visible;
+    }
+
+    & .nav--circle {
+      transform: rotate(-70deg);
+    }
+  }
+}
+
+.nav--circle__container {
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  z-index: 3;
+}
+.nav--circle {
+  background-color: $color-secondary;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+
+  transition: transform 0.5s linear;
+
+  &__button {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    height: 10rem;
+    background: transparent;
+    border: 0;
+    font-size: 4rem;
+    color: #fff;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  &__open {
+    left: 60%;
+  }
+  &__close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+}
+.nav--rotated {
+  position: fixed;
+  bottom: 4rem;
+  left: 0;
+  z-index: 10000;
+  visibility: hidden;
+
+  &__list {
+    padding-left: 2.7rem;
+    margin-bottom: -5rem;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    color: $color-white;
+    margin: 4rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    transform: translateX(-100%);
+    transition: transform 0.4s 0.3s ease-in;
+
+    & + li {
+      margin-left: 1rem;
+      transform: translateX(-150%);
+
+      & + li {
+        margin-left: 2rem;
+        transform: translateX(-200%);
+      }
+    }
+
+    ion-icon {
+      font-size: 2.4rem;
+      transition: color 0.3s ease;
+    }
+
+    &:not(:last-child):has(*:hover) ion-icon {
+      color: $color-secondary;
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    color: #fff;
+    margin-bottom: -3px;
+    position: relative;
+    transition: color 0.3s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -4px;
+      left: 50%;
+      transform: scaleX(0);
+      translate: -50% 0;
+      height: 3px;
+      width: 100%;
+      border-radius: 50%;
+      background-color: currentColor;
+      transition: transform 0.3s ease;
+    }
+  }
+  &__link:hover,
+  &__link:active {
+    color: $color-secondary;
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+/*HIDDEN SEARCH BAR*/
+/*HIDDEN SEARCH BAR*/
+/*HIDDEN SEARCH BAR*/
+/*HIDDEN SEARCH BAR*/
+/*HIDDEN SEARCH BAR*/
+
+.hidden-searchbar.hidden-searchbar--active {
+  animation: increaseSearchbar 0.2s forwards;
+}
+
+.hidden-searchbar {
+  position: relative;
+  height: 5rem;
+  transform: translateX(-300%);
+  transition: transform 0.4s 0.05s ease-in;
+  //Important beacouse becaouse marleft was set when applying styles to li in ul up here
+  margin-left: 7rem !important;
+
+  &--active &__button {
+    transform: translateX(15rem);
+  }
+  &--active &__input {
+    width: 20rem;
+  }
+
+  &__input {
+    background-color: #fff;
+    border: none;
+    padding: 1.2rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #555;
+    width: 5rem;
+    height: 5rem;
+    transition: all 0.3s ease;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    transition: all 0.3s ease;
+  }
+}
+
+@keyframes increaseSearchbar {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: -38%;
+  }
+}

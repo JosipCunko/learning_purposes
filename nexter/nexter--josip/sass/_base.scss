@@ -1,0 +1,72 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+//RESPONSIVE
+@mixin responsive($bp) {
+  @media only screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+$bp-largest: 77.8125em; //1245px
+$bp-large: 62.19em; //995px
+$bp-medium: 47.1875em; //755px
+$bp-small: 38.125em; //610px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @include responsive($bp-largest) {
+    font-size: 50%;
+  }
+}
+body {
+  font-size: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start] 8rem[sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end]
+    minmax(6rem, 1fr)
+    [full-end];
+
+  @include responsive($bp-large) {
+    grid-template-rows: 7rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end]
+      minmax(6rem, 1fr)
+      [full-end];
+  }
+  @include responsive($bp-medium) {
+    grid-template-rows: 7rem calc(100vh - 7rem);
+  }
+}

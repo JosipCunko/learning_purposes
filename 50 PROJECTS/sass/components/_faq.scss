@@ -1,0 +1,108 @@
+.section-faq {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  max-width: 40%;
+  margin: 5rem auto;
+}
+.faq {
+  background-color: transparent;
+
+  // border-inline-start: 4px solid;
+  border-top: 4px solid;
+
+  border-image-source: radial-gradient(
+    circle at top,
+    $color-primary 0%,
+    $color-primary-light 20%,
+    transparent 95%
+  );
+  border-image-slice: 1;
+
+  border-radius: 11px;
+  margin: 2rem 0;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  transition: all 2.3s ease;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  &__text {
+    margin: 3rem 0 0;
+    display: none;
+  }
+
+  &--active {
+    background-color: $color-primary-light;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(#000, 0.1), 0 3px 6px rgba(#000, 0.1);
+
+    border: 0;
+    border-radius: inherit;
+    border-top: 4px solid;
+    border-image-source: linear-gradient(90deg, red, blue);
+    border-image-slice: 1;
+
+    & .faq__text {
+      display: block;
+    }
+
+    &::before,
+    &::after {
+      content: "\f075";
+      font-family: "Font Awesome 5 Free";
+      color: $color-primary;
+      font-size: 6rem;
+      position: absolute;
+      opacity: 0.4;
+      top: 2rem;
+      left: 2rem;
+      z-index: 0;
+    }
+    &::before {
+      color: $color-primary-dark;
+      top: -1rem;
+      left: -3rem;
+      transform: rotateY(180deg);
+    }
+    .faq__btn ion-icon:nth-child(1) {
+      display: none;
+    }
+    .faq__btn ion-icon:nth-child(2) {
+      color: #fff;
+      display: block;
+    }
+    .faq__btn {
+      background-color: $color-primary;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 2.25rem;
+    right: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+
+    width: 3rem;
+    height: 3rem;
+
+    background: none;
+    border: none;
+
+    ion-icon:nth-child(2) {
+      display: none;
+    }
+    ion-icon {
+      font-size: 2.2rem;
+    }
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+}

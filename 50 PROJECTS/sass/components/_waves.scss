@@ -1,0 +1,44 @@
+.section-waves {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/imgs/stacked-waves-haikei.svg");
+  rotate: 180deg;
+  &--flip {
+    rotate: 0deg;
+  }
+  margin: 0;
+}
+.section-blob {
+  margin: -2px 0;
+  background-color: #7db9f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blob {
+  position: relative;
+  z-index: -1;
+  &__text {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-left: 15rem;
+    white-space: nowrap;
+    max-width: 2ch;
+  }
+  &__img {
+    height: 20rem;
+    border-radius: 18% 82% 74% 26% / 30% 35% 65% 70%;
+    width: 20rem;
+    object-fit: cover;
+    margin-left: -15rem;
+    transition: all 0.7s;
+
+    &:hover {
+      border-radius: 95% 5% 84% 16% / 30% 13% 87% 70%;
+    }
+  }
+}

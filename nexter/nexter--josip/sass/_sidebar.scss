@@ -1,0 +1,162 @@
+.sidebar {
+  background-color: $color-primary;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1/-1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  @include responsive($bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  // display: flex;
+  // justify-content: center;
+
+  &__button {
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    @include responsive($bp-large) {
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  }
+  &__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: $color-primary;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+  }
+  &__icon {
+    position: relative;
+  }
+  &__icon,
+  &__icon::after,
+  &__icon::before {
+    content: "";
+    display: inline-block;
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+  }
+  &__icon::after,
+  &__icon::before {
+    position: absolute;
+    transition: all 200ms;
+    left: 0;
+  }
+  &__icon::after {
+    bottom: -0.8rem;
+  }
+  &__icon::before {
+    top: -0.8rem;
+  }
+  &__button:hover &__icon:before {
+    top: -1rem;
+  }
+  &__button:hover &__icon:after {
+    bottom: -1rem;
+  }
+
+  //NAVIGATION
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%);
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+  }
+
+  &__item span {
+    margin-right: 1.6rem;
+    display: inline-block;
+  }
+  &__item {
+    text-align: center;
+    margin: 1rem;
+  }
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 222%;
+    transition: all 0.4s;
+    display: inline-block;
+  }
+
+  /*FUNCTIONALITY*/
+  &__link:hover,
+  &__link:active {
+    background-position: 100%;
+    color: $color-primary-dark;
+    transform: translateX(1rem);
+  }
+
+  //FUNCTIONALITY
+  &--active &__background {
+    transform: scale(70);
+  }
+  &--active &__nav {
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--active &__button &__icon {
+    background-color: transparent;
+  }
+  &--active &__button &__icon:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &--active &__button &__icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
