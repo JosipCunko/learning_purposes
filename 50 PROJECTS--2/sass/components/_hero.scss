@@ -1,0 +1,115 @@
+.hero {
+  background-image: linear-gradient(160deg, $color-primary-dark 0%, #333 40%);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-wrap: pretty;
+  color: #fff;
+
+  &__content {
+    max-width: 90ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 90%;
+      border-bottom: 2px solid rgba(85, 85, 85, 0.5);
+      height: 100%;
+      border-radius: 50%;
+    }
+    &::after {
+      border-block: 2px solid rgba(85, 85, 85, 0.5);
+      top: 30%;
+    }
+  }
+
+  &__title {
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-size: 4.8rem;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    text span {
+      &:first-child {
+        background-image: linear-gradient(
+          90deg,
+          $color-primary-light,
+          $color-primary-dark
+        );
+        background-clip: text;
+        color: transparent;
+      }
+      &:last-child {
+        font-style: italic;
+        letter-spacing: -3px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #ccc;
+  }
+  &__cta:link,
+  &__cta:visited {
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    font-weight: 500;
+    background-image: linear-gradient(
+      120deg,
+      $color-primary-dark,
+      $color-primary-light
+    );
+    font-size: 1.6rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px 0 $color-primary;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #333;
+    border-radius: 50px;
+    width: 6rem;
+    height: 6rem;
+    box-shadow: inset 1px 1px 5px $color-primary-light;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:has(ion-icon[name="logo-xbox"]) {
+      left: -20%;
+    }
+    &:has(ion-icon[name="logo-playstation"]) {
+      right: -20%;
+    }
+
+    ion-icon {
+      position: relative;
+      font-size: 4rem;
+      z-index: 2;
+    }
+  }
+}
