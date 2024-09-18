@@ -1,0 +1,99 @@
+.elements__text--text {
+  display: inline-block;
+}
+.text--1 {
+  background-color: #eee;
+  padding: 2rem;
+  max-width: 45%;
+  color: #333;
+  margin-right: 1.6rem;
+
+  &__border {
+    margin-bottom: 0.4rem;
+    height: 5px;
+    width: 8rem;
+    background-color: rgb(0, 175, 0);
+  }
+
+  &__heading {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 4.8rem;
+
+    margin-bottom: 2.4rem;
+
+    &-secondary {
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      margin-bottom: 1.2rem;
+    }
+  }
+  &__paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.4;
+  }
+}
+
+.text--2 {
+  background-color: #eee;
+  padding: 2rem;
+  max-width: 25%;
+  margin-right: 1.6rem;
+  color: #333;
+
+  &__intro {
+    text-transform: uppercase;
+    color: red;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__heading {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 4rem;
+
+    margin-bottom: 2rem;
+  }
+  &__paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.4;
+  }
+}
+.text--3 {
+  background-color: rgb(145, 205, 255);
+  padding: 2rem;
+  max-width: 25%;
+  margin-right: 1.6rem;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 600;
+
+  &__intro {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__heading {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    &-secondary {
+      font-size: 1.6rem;
+      margin-bottom: 1.4rem;
+    }
+  }
+  &__paragraph {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}

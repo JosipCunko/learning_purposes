@@ -1,0 +1,100 @@
+@media (max-width: 75em) {
+  /*1200px*/
+  .forLinks {
+    margin-bottom: 0rem !important;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .section-hero {
+    height: 70vh;
+  }
+  .section-table {
+    padding-top: 2.4rem;
+  }
+  .card {
+    display: flex;
+  }
+  .card__img-box {
+    width: 115%;
+  }
+  .card__img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .card__text-box {
+    padding: 4.8rem 6.4rem;
+  }
+  .cta {
+    max-width: 80rem;
+    gap: 0;
+  }
+  .section-accordion {
+    padding-block: 12.8rem;
+    margin: 0;
+  }
+
+  .tabbed-component {
+    margin: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  /*900px*/
+  html {
+    font-size: 50%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin-bottom: 0;
+  }
+  .section-hero {
+    height: 60vh;
+  }
+  .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+  .grid--2-cols {
+    row-gap: 9.6rem;
+  }
+  .section-cta {
+    padding-block: 8rem;
+  }
+  .section-slider {
+    padding: 4.8rem;
+  }
+  .section-pagination .pagination {
+    margin: 4.8rem auto;
+  }
+  .testimonial-text {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 37.5%;
+  }
+  main {
+    margin: 0;
+  }
+  .grid--2-cols {
+    row-gap: 6.4rem;
+  }
+
+  .card {
+    display: block;
+  }
+  .section-slider {
+    padding: 3.6rem;
+  }
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  .testimonial-heading {
+    font-size: 1.6rem;
+  }
+  .section-tabbed-component {
+    padding: 0;
+  }
+}

@@ -1,0 +1,179 @@
+@keyframes zIndexHack {
+  0%,
+  100% {
+    z-index: 1;
+  }
+}
+
+.section-solar-system {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  position: relative;
+  align-self: flex-start;
+  margin-left: -3rem;
+  margin-top: -5rem;
+}
+.solar-system {
+  &__sun {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: radial-gradient(red, yellow);
+  }
+  &__earth {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    animation: globe-rotate 30s linear infinite;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      position: absolute;
+      background-image: radial-gradient(rgb(52, 255, 52), blue);
+      left: 3rem;
+    }
+  }
+  &__moon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: -1.5rem;
+    left: 1.4rem;
+    animation: globe-rotate 20s linear infinite;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      background: radial-gradient(rgb(88, 88, 88), rgb(175, 175, 175));
+      left: 3rem;
+      top: -0.5rem;
+    }
+  }
+}
+@keyframes globe-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes movePlane {
+  to {
+    transform: translate(130rem, var(--planeY));
+  }
+}
+
+.plane {
+  --planeY: -34rem;
+  width: 18rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translate(-40rem, var(--planeY));
+  z-index: 9999;
+  animation: movePlane 20s linear infinite;
+
+  &__body {
+    width: 8rem;
+    background-color: rgb(218, 207, 58);
+    position: relative;
+    height: 2rem;
+
+    border-radius: 50px;
+    z-index: 2;
+    border-top-left-radius: 0px;
+    // border-bottom-left-radius: 0px;
+  }
+  &__tail {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    clip-path: polygon(0 0, 31% 0, 100% 100%, 0% 100%);
+    background-color: rgb(218, 207, 58);
+  }
+  &__windows {
+    position: absolute;
+    left: 3.5rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+  &__window {
+    background-color: #fff;
+    height: 5px;
+    width: 4px;
+    border-radius: 50%;
+  }
+  &__captain-window {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    background-color: rgb(153, 190, 202);
+    width: 1.4rem;
+    height: 1rem;
+    clip-path: polygon(
+      39% 23%,
+      75% 41%,
+      90% 60%,
+      95% 84%,
+      81% 100%,
+      15% 99%,
+      0 86%,
+      0 26%,
+      13% 16%
+    );
+  }
+  // &__nose {
+  //   width: 2px;
+  //   height: 6px;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 50%;
+
+  //   translate: 0 -50%;
+  //   background-color: red;
+  //   clip-path: polygon(76% 0, 100% 30%, 100% 70%, 84% 100%, 0 100%, 0 0);
+  // }
+  &__wing {
+    background-color: rgb(180, 171, 39);
+    width: 4rem;
+    height: 10px;
+    position: absolute;
+    // z-index: 1;
+    &--1 {
+      top: 33px;
+      left: 32px;
+      rotate: 40deg;
+      border-top-left-radius: 12px;
+    }
+    &--2 {
+      bottom: 31px;
+      left: 40px;
+      rotate: -39deg;
+      width: 3rem;
+      background-color: rgb(211, 201, 55);
+      z-index: 3;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+}

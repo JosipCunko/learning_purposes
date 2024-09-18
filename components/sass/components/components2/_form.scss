@@ -1,0 +1,167 @@
+.section-form {
+  background-color: #ddd;
+  width: 60%;
+  height: 40rem;
+  margin: 5rem auto;
+  padding-left: 5.4rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#000, 0.4),
+      rgba(#000, 0.4)
+    ),
+    url("/imgs/nature-1--small.jpg");
+
+  font-family: Poppins;
+}
+.form {
+  background-color: rgba(#fff, 0.8);
+  padding: 3.6rem 5.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  height: 90%;
+  width: 60%;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 80%;
+    align-self: flex-start;
+
+    label {
+      font-size: 1.2rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #777;
+
+      transition: all 0.3s;
+
+      opacity: 1;
+      transform: translate(0);
+    }
+
+    input {
+      font-family: inherit;
+      font-size: 1.4rem;
+      color: #333;
+      padding: 1.2rem 2.4rem 1.2rem 1.2rem;
+      border-radius: 3px;
+      border: 1px solid transparent;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:placeholder-shown + label {
+        transform: translate(5%, -400%);
+        opacity: 0;
+      }
+
+      &::placeholder {
+        color: #777;
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      &:user-valid {
+        border: 1px solid green;
+      }
+      &:user-invalid {
+        border: 1px solid red;
+      }
+      &:focus:invalid {
+        border: 1px solid yellow;
+      }
+    }
+  }
+  &--radio__group {
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+    align-self: flex-start;
+
+    .form__submit {
+      padding: 1.2rem 2.4rem;
+      border-radius: 5px;
+      border: 1px solid orange;
+      background-color: rgb(224, 158, 58);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: rgb(221, 167, 87);
+        animation: pulse 1s ease-in-out infinite;
+      }
+    }
+
+    .radio {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        display: none;
+
+        &:checked + .radio__checkbox {
+          background-color: rgb(255, 179, 66);
+        }
+      }
+
+      &__checkbox {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        outline: 3px solid rgb(255, 179, 66);
+        outline-offset: 3px;
+
+        transition: all 0.2s;
+      }
+      label {
+        font-size: 1.2rem;
+        color: rgb(224, 158, 58);
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+  &__submit {
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: rgb(224, 158, 58);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

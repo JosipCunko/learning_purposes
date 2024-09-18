@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/594bf93c22.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="/imgs/sass-favicon.png" />
+    <title>Web components</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <i class="fa-brands fa-sass fa-5x"></i>
+      </div>
+      <nav class="header__nav">
+        <span class="header__nav--link header__nav--link--elements"
+          >Elements</span
+        >
+        <div class="elements__popup">
+          <nav class="elements__nav">
+            <a class="elements__nav--link" href="#text">Text</a>
+            <a class="elements__nav--link" href="#btns">Buttons</a>
+            <a class="elements__nav--link" href="#imgs">Images</a>
+            <a class="elements__nav--link" href="#inputs">Inputs</a>
+            <a class="elements__nav--link" href="#tags">Tags</a>
+          </nav>
+        </div>
+        <span class="header__nav--link header__nav--link--components"
+          >Components</span
+        >
+        <div class="components__popup">
+          <nav class="components__nav">
+            <a class="components__nav--link" href="#accordion">Accordion</a>
+            <a class="components__nav--link" href="#cards">Preview cards</a>
+            <a class="components__nav--link" href="#carousel">Carousel</a>
+            <a class="components__nav--link" href="#tabs">Tabs</a>
+            <a class="components__nav--link" href="#testimonials"
+              >Testimonials</a
+            >
+            <a class="components__nav--link" href="#steps">Steps</a>
+            <a class="components__nav--link" href="#form">Form</a>
+            <a class="components__nav--link" href="#range">Range slider</a>
+            <a class="components__nav--link" href="#modal">Modal</a>
+            <a class="components__nav--link" href="#cta">Call to action</a>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <h2 class="section-intro">Hero section</h2>
+            <h1 class="heading-primary u-marbot-med">
+              All web components that you need
+            </h1>
+            <p class="paragraph hero__description">
+              Find yourself a
+              <strong>nicely designed web component</strong> that suits you,
+              copy code provided in VS Code and enjoy! <br />
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sequi esse nam eveniet id obcaecati modi optio quam
+              a atque. Cupiditate ad atque at pariatur? Dolore perspiciatis,
+              quibusdam aliquam ipsam cupiditate odit tenetur nisi inventore
+              doloribus aliquid, fugiat alias facilis.
+            </p>
+            <div class="hero__btns">
+              <a href="#" class="btn hero__btn">Start searching</a>
+            </div>
+          </div>
+          <div class="hero__img-box">
+            <img
+              src="/imgs/programming.jpg"
+              alt="Programming img"
+              class="hero__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-elements" id="elements">
+        <div class="elements__text" id="text">
+          <div class="elements__text--text text--1">
+            <div class="text--1__border">&nbsp;</div>
+            <div class="text--1__heading">Job Description Rewriter</div>
+            <div class="text--1__heading-secondary">
+              Rewrite your job with our free AI-powered tool.
+            </div>
+            <div class="text--1__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate blanditiis eveniet aut perspiciatis rerum quasi dolore,
+              accusamus et ea. Illo, debitis enim corrupti corporis, atque aut
+              iusto quos nulla libero dolorem est ullam. Optio, laboriosam
+              dolorem repudiandae quae reiciendis, non doloremque adipisci
+              quibusdam totam unde ullam? Expedita consequatur hic nihil beatae,
+              omnis est. Fugiat et, quo repellendus repudiandae quod veniam.
+            </div>
+          </div>
+          <div class="elements__text--text text--2">
+            <div class="text--2__intro">Get a quote</div>
+            <div class="text--2__heading">Get started with Cover today</div>
+
+            <div class="text--2__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate blanditiis eveniet aut perspiciatis rerum quasi dolore,
+              accusamus et ea. Illo, debitis enim corrupti corporis, atque aut
+              iusto quos nulla libero dolorem est ullam.
+            </div>
+          </div>
+          <div class="elements__text--text text--3">
+            <div class="text--3__intro">Earn more on your paycheck.</div>
+
+            <div class="text--3__heading">Get paid up to two days earlier.</div>
+            <div class="text--3__heading-secondary">
+              Why should you wait to get paid?
+            </div>
+            <div class="text--3__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate blanditiis eveniet aut perspiciatis rerum quasi dolore,
+              accusamus et ea.
+            </div>
+          </div>
+        </div>
+        <div class="elements__btns" id="btns">
+          <button class="elements__btns-btn elements__btns-btn--1">
+            Add to cart <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+
+          <button class="elements__btns-btn elements__btns-btn--2">
+            Watch video
+          </button>
+          <button class="elements__btns-btn elements__btns-btn--3">
+            Try now for<span>$3.50</span>
+          </button>
+          <button class="elements__btns-btn elements__btns-btn--4">
+            Get started
+          </button>
+          <button class="elements__btns-btn elements__btns-btn--5">
+            Learn more
+          </button>
+          <div class="elements__btns-btn--3d--container">
+            <button class="elements__btns-btn--3d">Follow</button>
+            <button class="elements__btns-btn--3d--clone">Follow</button>
+
+            <ion-icon class="star--1" name="star"></ion-icon>
+            <ion-icon class="star--2" name="star"></ion-icon>
+            <ion-icon class="star--3" name="star"></ion-icon>
+            <ion-icon class="star--4" name="star"></ion-icon>
+            <ion-icon class="star--5" name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="elements__imgs" id="imgs">
+          <div class="elements__imgs--img-box elements__imgs--img-box--1">
+            <div
+              class="elements__imgs--img-box--1--content elements__imgs--img-box--1--content--v1"
+            >
+              <p class="elements__imgs--img-box--1--content--title">
+                Get a completly free Ferrari by contributing to charity
+              </p>
+              <p class="elements__imgs--img-box--1--content--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda vitae illum iusto temporibus magni iste numquam totam
+                blanditiis quam doloribus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Assumenda vitae illum iusto
+                temporibus magni iste numquam totam blanditiis quam doloribus?
+              </p>
+            </div>
+            <div
+              class="elements__imgs--img-box--1--content elements__imgs--img-box--1--content--v2"
+            >
+              <p class="elements__imgs--img-box--1--content--title">
+                Get a completly free Ferrari by contributing to charity
+              </p>
+              <p class="elements__imgs--img-box--1--content--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda vitae illum iusto temporibus magni iste numquam totam
+                blanditiis quam doloribus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Assumenda vitae illum iusto
+                temporibus magni iste numquam totam blanditiis quam doloribus?
+              </p>
+            </div>
+          </div>
+          <div class="elements__imgs--gallery">
+            <div class="elements__imgs--img-box elements__imgs--img-box--2">
+              <!-- <img src="/imgs/nature-0.jpg" alt="Car gallery img" /> -->
+              <p class="elements__imgs--img-box--text">Overlay</p>
+            </div>
+            <div class="elements__imgs--img-box elements__imgs--img-box--3">
+              <p class="elements__imgs--img-box--text">Hue</p>
+              <!-- <img src="/imgs/nature-1.jpg" alt="Car gallery img" /> -->
+            </div>
+            <div class="elements__imgs--img-box elements__imgs--img-box--4">
+              <p class="elements__imgs--img-box--text">Screen</p>
+              <!-- <img src="/imgs/nature-2.jpg" alt="Car gallery img" /> -->
+            </div>
+            <div class="elements__imgs--img-box elements__imgs--img-box--5">
+              <p class="elements__imgs--img-box--text">Color</p>
+              <!-- <img src="/imgs/nature-3.jpg" alt="Car gallery img" /> -->
+            </div>
+            <div class="elements__imgs--img-box elements__imgs--img-box--6">
+              <p class="elements__imgs--img-box--text">Difference</p>
+              <!-- <img src="/imgs/nature-3.jpg" alt="Car gallery img" /> -->
+            </div>
+          </div>
+          <div class="elements__imgs--centered-container">
+            <div class="elements__imgs--img-box elements__imgs--img-box--7">
+              <p>Floor fade</p>
+            </div>
+            <div class="elements__imgs--img-box elements__imgs--img-box--8">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                eligendi quae eius quod unde sed fugit placeat esse! Possimus
+                quo soluta itaque ea quibusdam, quisquam reiciendis illum
+                repudiandae, quos corporis dolor iusto sed? Accusantium ratione
+                atque voluptatibus aspernatur quo earum repudiandae officia
+                tempora perferendis maiores, unde quidem natus deleniti
+                voluptas!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="elements__inputs" id="inputs">
+          <div
+            class="elements__inputs--input-box elements__inputs--input-box--1"
+          >
+            <ion-icon name="search-outline"></ion-icon>
+            <input
+              type="text"
+              class="elements__inputs--input elements__inputs--input--1"
+              placeholder="Search for anything"
+            />
+          </div>
+
+          <div
+            class="elements__inputs--input-box elements__inputs--input-box--2"
+          >
+            <input
+              type="email"
+              class="elements__inputs--input elements__inputs--input--2"
+              placeholder="Your work email"
+            />
+            <button>Learn more</button>
+          </div>
+          <div
+            class="elements__inputs--input-box elements__inputs--input-box--3"
+          >
+            <input
+              type="email"
+              class="elements__inputs--input elements__inputs--input--3"
+              placeholder="Enter your work email address"
+            />
+            <button>Get a demo</button>
+          </div>
+          <div class="elements__inputs--select-container">
+            <!-- <label for="elements__inputs--select">DELIVER EVERY</label> -->
+            <select
+              id="elements__inputs--select"
+              class="elements__inputs--select-box"
+            >
+              <option value="days-15">15 DAYS</option>
+              <option value="days-30">30 DAYS</option>
+              <option value="days-45">45 DAYS</option>
+              <option value="days-60">60 DAYS</option>
+            </select>
+            <div class="elements__inputs--icon-container">
+              <ion-icon name="chevron-expand-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="elements__inputs--input-box--4">
+            <button class="elements__inputs--btn-minus elements__inputs--btn">
+              &minus;
+            </button>
+
+            <div class="elements__inputs--input--4">0</div>
+            <button class="elements__inputs--btn-plus elements__inputs--btn">
+              &plus;
+            </button>
+          </div>
+        </div>
+        <div class="elements__tags" id="tags">
+          <div class="elements__tags--tag elements__tags--tag--1">frontend</div>
+          <div class="elements__tags--tag elements__tags--tag--2">SVG</div>
+          <div class="elements__tags--tag elements__tags--tag--3">Ratings</div>
+          <div class="elements__tags--tag elements__tags--tag--4">
+            React Core Team
+          </div>
+        </div>
+      </section>
+      <section class="section-components" id="components">
+        <div class="breadcrumbsPagination">
+          <div class="components__breadcrumbs">
+            <div class="components__breadcrumbs--1">
+              Development
+              <ion-icon name="chevron-forward-outline"></ion-icon> Web
+              Development
+              <ion-icon name="chevron-forward-outline"></ion-icon> CSS
+            </div>
+          </div>
+          <div class="components__pagination">
+            <div class="components__pagination--1">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+              <a href="">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="components__pagination--2">
+              <a href="#"><ion-icon name="arrow-back-outline"></ion-icon></a>
+              <a class="components__pagination--2-link" href="#">1</a>
+              <a class="components__pagination--2-link" href="#">2</a>
+              <a class="components__pagination--2-link" href="#">3</a>
+              <a class="components__pagination--2-link" href="#">4</a>
+              <a class="components__pagination--2-link" href="#">5</a>
+              <a class="components__pagination--2-link" href="#">6</a>
+              <a class="components__pagination--2-link" href="#">7</a>
+              <a class="components__pagination--2-link" href="#"
+                ><ion-icon name="arrow-forward-outline"></ion-icon
+              ></a>
+            </div>
+            <div class="components__pagination--3">
+              <a href="#"><ion-icon name="arrow-back-outline"></ion-icon></a>
+              <a class="components__pagination--3-link" href="#">1</a>
+              <a class="components__pagination--3-link" href="#">2</a>
+              <a class="components__pagination--3-link" href="#">3</a>
+              <a class="components__pagination--3-link" href="#">4</a>
+              <a class="components__pagination--3-link" href="#">5</a>
+              <a class="components__pagination--3-link" href="#">6</a>
+              <a class="components__pagination--3-link" href="#">7</a>
+              <a class="components__pagination--3-link" href="#"
+                ><ion-icon name="arrow-forward-outline"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="alert-bars">
+          <div class="alert-bars--1">
+            🎉 #1 Product of the day on Product Hunt 🎉
+          </div>
+          <div class="alert-bars--2">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Favorited!
+            <button>Add to List</button>
+          </div>
+          <div class="alert-bars--3">
+            <ion-icon name="close-outline"></ion-icon>
+            Check out our feature on the news
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="alert-bars--4">
+            <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+            <p class="alert-bars--4--title">Welcome aboard!</p>
+            <p class="alert-bars--4--text">
+              Your GitHub account has been connected, and you are all set!
+              Welcome to CSS for Javascript Developers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-preview-cards" id="cards">
+        <div class="preview-card__container">
+          <div class="preview-card preview-card--1">
+            <img
+              srcset="/imgs/people-2--small.jpg 1x, /imgs/people-2.jpg 2x"
+              alt="people"
+              class="preview-card__img preview-card--1__img"
+            />
+            <ion-icon name="bulb-outline"></ion-icon>
+            <div class="preview-card--1__tag">THINK</div>
+            <h3 class="preview-card--1__title">
+              Quiet your mind and calm the storm
+            </h3>
+            <p class="preview-card--1__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus dolorem amet ad quibusdam, distinctio reiciendis?
+            </p>
+          </div>
+          <div class="preview-card preview-card--2">
+            <div class="preview-card--2__icon">
+              <ion-icon name="mail-open-outline"></ion-icon>
+            </div>
+            <p class="preview-card--2__text">
+              On average we spend almost <span>12 hours a week</span> going
+              through our email inboxes
+            </p>
+          </div>
+
+          <div class="preview-card preview-card--3">
+            <h3 class="preview-card--3__title">$33M</h3>
+            <p class="preview-card--3__text">
+              Trackable revenue generated accross our portfolio
+            </p>
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+
+          <div class="preview-card preview-card--4">
+            <div class="preview-card--4__icon">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+            <h3 class="preview-card--4__title">
+              Gets feedback from stakeholders.
+            </h3>
+            <p class="preview-card--4__text">
+              With Greenlight you can easily coliate feedback from those who
+              matter on the product version that your users will see.
+            </p>
+          </div>
+          <div class="preview-card preview-card--5">
+            <div class="preview-card--5__img-box">
+              <img
+                srcset="/imgs/motor-1--small.jpg 1x, /imgs/motor-1.jpg 2x"
+                alt="Car"
+                class="preview-card--5__img"
+              />
+              <div class="preview-card--5__tag">
+                <ion-icon name="flame-outline"></ion-icon>
+                POPULAR
+              </div>
+            </div>
+
+            <div class="preview-card--5__content">
+              <p class="preview-card--5__author">FROM MYDRAL9JULL</p>
+              <h3 class="preview-card--5__title">
+                ATV black Beach Safari and the Plane Wreck
+              </h3>
+              <div class="preview-card--5__details">
+                <div class="preview-card--5__details--part">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span>All year</span>
+                </div>
+                <div class="preview-card--5__details--part">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>2 hrs</span>
+                </div>
+                <div class="preview-card--5__details--part">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <span>131</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="preview-card preview-card--6">
+            <div class="preview-card--6__illustration">
+              <img src="/imgs/illustration-1-no-bg.png" alt="Programmers" />
+            </div>
+            <div class="preview-card--6__content">
+              <div class="preview-card--6__title">
+                React Native for Designers Part 2
+              </div>
+              <div class="preview-card--6__details">
+                <span>12 views</span> - <span>3 hours</span>
+              </div>
+              <div class="preview-card--6__icon">
+                <ion-icon name="thumbs-up-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="preview-card preview-card--7">
+            <div class="preview-card--7__img-box">
+              <!-- <img src="/imgs/people-1.jpg" alt="people" /> -->
+              <button class="preview-card--7__play-btn">
+                <ion-icon name="play"></ion-icon>
+              </button>
+              <a
+                href="https://www.udemy.com/"
+                class="preview-card--7__preview-text"
+              >
+                Preview this course
+              </a>
+            </div>
+            <div class="preview-card--7__content">
+              <div class="preview-card--7__prices">
+                <span class="main-price">$12.99</span>
+                <span class="og-price">$129.99</span>
+                <span class="percent-off">90% off</span>
+              </div>
+              <span class="time-discount">
+                <ion-icon name="alarm-outline"></ion-icon>
+                5 hours left on this price!</span
+              >
+              <button class="preview-card--7__cart">Add to cart</button>
+              <button class="preview-card--7__buy">Buy now</button>
+
+              <span class="buy-description">30 Day Money-Back Guarrantee</span>
+
+              <div class="preview-card--7__details">
+                <h3>This course includes</h3>
+                <ul class="preview-card--7__details--list">
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>68 hourse
+                    on demand video
+                  </li>
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>20
+                    articles
+                  </li>
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>18
+                    downloadable resources
+                  </li>
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>Full
+                    lifetime acces
+                  </li>
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>Access on
+                    mobile and TV
+                  </li>
+                  <li class="preview-card--7__item">
+                    <ion-icon name="checkmark-done-outline"></ion-icon
+                    >Certificate of completion
+                  </li>
+                </ul>
+              </div>
+              <button class="coupon">Apply coupon</button>
+            </div>
+          </div>
+          <div class="preview-card preview-card--8">
+            <div class="preview-card--8--content">
+              <span class="preview-card--8--title">911</span>
+              <span class="preview-card--8--price">From $99,200</span>
+            </div>
+            <div class="preview-card--8--buttons">
+              <a href="https://assets.porsche.com/hr/zagreb/">
+                <ion-icon name="link-outline"></ion-icon> Build Your Porsche</a
+              >
+              <a href="https://assets.porsche.com/hr/zagreb/">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                All models</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cards">
+        <div class="cards__container">
+          <div class="card card--1">
+            <p class="card__type">Basic</p>
+            <h3 class="card__price">Free</h3>
+            <p class="card__price-description">Trial</p>
+            <ul class="card__list">
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Free</span> courses
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">5 Premium</span> Videos
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Notify me,</span> Like
+              </li>
+            </ul>
+            <div class="card__btn">
+              <i class="fa-solid fa-play"></i>
+              <a href="#" class="card__btn--link">Sign up</a>
+            </div>
+          </div>
+
+          <div class="card card--2">
+            <p class="card__type">Pro</p>
+            <h3 class="card__price">$19</h3>
+            <p class="card__price-description">per month, billed monthly</p>
+            <ul class="card__list">
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">All courses</span> and videos
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Source files</span> ePut
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Certificates,</span> Tests
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Premium</span> tutorials
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">UI,</span> icons, illustrations
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Commercial</span> use
+                illustrations
+              </li>
+            </ul>
+            <div class="card__btn">
+              <i class="fa-sharp fa-regular fa-circle-play"></i>
+              <a href="#" class="card__btn--link">Sign up</a>
+            </div>
+          </div>
+
+          <div class="card card--3">
+            <p class="card__type">Team</p>
+            <h3 class="card__price">$25</h3>
+            <p class="card__price-description">
+              per member, per month, billed monthly
+            </p>
+            <ul class="card__list">
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">5 users</span>
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Manage</span> subscriptions
+              </li>
+              <li class="card__item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span class="card__highlighted">Team</span> progress
+              </li>
+            </ul>
+
+            <div class="card__btn">
+              <i class="fa-sharp fa-regular fa-circle-play"></i>
+              <a href="#" class="card__btn--link">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="weird-card__container">
+        <div class="weird-card">
+          <div class="weird-card__icon">
+            <ion-icon name="diamond-outline"></ion-icon>
+          </div>
+          <div class="weird-card__content">
+            <h2>Diamondsssss</h2>
+            <p>
+              Diamond is a solid form of the element carbon with its atoms
+              arranged in a crystal structure called diamond cubic. Diamond as a
+              form of carbon is a tasteless, odourless, strong, brittle solid,
+              colourless in pure form, a poor conductor of electricity, and
+              insoluble in water
+            </p>
+          </div>
+        </div>
+        <div class="weird-card">
+          <div class="weird-card__icon">
+            <ion-icon name="rocket-outline"></ion-icon>
+          </div>
+          <div class="weird-card__content">
+            <h2>Rockets are evolving</h2>
+            <p>
+              A rocket is a vehicle that uses jet propulsion to accelerate
+              without using any surrounding air. A rocket engine produces thrust
+              by reaction to exhaust expelled at high speed. Rocket engines work
+              entirely from propellant carried within the vehicle; therefore a
+              rocket can fly in the vacuum of space.
+            </p>
+          </div>
+        </div>
+        <div class="weird-card">
+          <div class="weird-card__icon">
+            <ion-icon name="earth-outline"></ion-icon>
+          </div>
+          <div class="weird-card__content">
+            <h2>Earth! Earth! Earth!</h2>
+            <p>
+              Global warming potential is an index to measure how much infrared
+              thermal radiation a greenhouse gas would absorb over a given time
+              frame after it has been added to the atmosphere (or emitted to the
+              atmosphere).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-accordion" id="accordion">
+        <h3 class="accordion__main-title">FAQs</h3>
+        <div class="accordion__container">
+          <div class="accordion-row--1 accordion-row">
+            <div class="accordion--1 accordion">
+              <h4 class="accordion__title">How can I get started?</h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                possimus nostrum ipsum consectetur necessitatibus minima illo?
+                Iusto, illo blanditiis libero ab eius dicta illum aliquam ut
+                delectus in placeat a dolor impedit. Quos corporis eligendi nisi
+                quidem esse voluptatibus expedita blanditiis ea atque harum?
+                Voluptate facilis fugit libero tempora totam.
+              </p>
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="accordion accordion--2">
+              <h4 class="accordion__title">How much does Yotpo cost?</h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                enim animi eligendi magnam saepe exercitationem quidem laborum
+                nihil tempore fugiat ullam, corrupti accusamus quam, explicabo
+                minima aliquid nisi quis sequi rem libero? Officiis labore
+                perferendis optio dicta cupiditate voluptatem distinctio alias
+                nihil. Dolorem unde sit dolore perspiciatis architecto placeat
+                porro.
+              </p>
+              <div class="accordion__icon">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="accordion accordion--3">
+              <h4 class="accordion__title">
+                Which platofrms does Yotpo support?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit et nemo, sunt odit unde dolorem eligendi veritatis
+                dolore iste velit vero? Quisquam modi sunt saepe! Quo aspernatur
+                distinctio nam obcaecati, cum, unde asperiores mollitia quod
+                fuga assumenda nulla iure non aliquam, dolor quidem molestiae
+                sapiente laudantium maiores praesentium culpa aut.
+              </p>
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="accordion accordion--4">
+              <h4 class="accordion__title">
+                Does Yotpo support bussinesses with hig order volumes?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea hic
+                quo, delectus unde inventore fugit saepe, dolore dicta minus
+                quia a! Porro non ratione beatae pariatur temporibus. Ipsa sequi
+                odit non! Inventore tempora voluptates modi. Vero fugit
+                consequuntur ab, excepturi eius magni odio cupiditate, accusamus
+                libero ipsum at id voluptate?
+              </p>
+
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="accordion-row--2 accordion-row">
+            <div class="accordion accordion--5">
+              <h4 class="accordion__title">
+                Is my data secured? Who owns the content?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                veniam sit, commodi debitis repellat repudiandae quos eveniet
+                eius? Maxime molestiae suscipit ab voluptas! Beatae minus
+                mollitia perspiciatis cum? Tempore dolor alias in, molestias
+                quis, necessitatibus dignissimos esse unde, nihil fugiat ipsa
+                sapiente. Mollitia quod reiciendis voluptas consectetur rerum
+                amet rem!
+              </p>
+
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="accordion accordion--6">
+              <h4 class="accordion__title">
+                Does Yotpo work with Google, Facebook & Instagram?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                consequuntur reiciendis aspernatur similique laudantium sunt
+                cupiditate illum! Eligendi suscipit vero maxime deserunt
+                asperiores, iure modi ducimus sed esse accusantium assumenda
+                dolorem quas obcaecati tempora, consequuntur nisi doloribus,
+                culpa aspernatur quisquam! Autem expedita laborum quos suscipit
+                numquam beatae voluptates voluptatem nulla?
+              </p>
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="accordion accordion--7">
+              <h4 class="accordion__title">
+                Can I connect Yotop to my other marketing tools?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi autem laboriosam totam sed asperiores facilis, eius
+                aliquam facere possimus quos temporibus magni, neque nesciunt.
+                Fuga qui tenetur eveniet maxime voluptatum, provident
+                repudiandae molestias error! Hic praesentium explicabo eum. Eos
+                tempore veniam sit reiciendis harum eveniet amet temporibus sunt
+                impedit perferendis.
+              </p>
+              <ion-icon
+                name="chevron-down-outline"
+                class="accordion__icon"
+              ></ion-icon>
+            </div>
+            <div class="accordion accordion--8">
+              <h4 class="accordion__title">
+                What kind of plans do you offer for small brands?
+              </h4>
+              <p class="accordion__text text-not-showed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                accusantium maiores. Quo, obcaecati iure? Laudantium, nihil
+                dolorem. Voluptatibus quia molestias amet nobis unde ad nisi hic
+                adipisci excepturi, obcaecati, similique corrupti animi
+                molestiae earum! Architecto omnis, illum labore exercitationem
+                eius repellendus quia ea cupiditate, vero provident quam, eos
+                voluptate velit!
+              </p>
+              <ion-icon
+                class="accordion__icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tabs" id="tabs">
+        <div class="tabs">
+          <div class="tab" data-content="1">Plant-Based Protein</div>
+          <div class="tab" data-content="2">Vitamin & Minerals</div>
+          <div class="tab" data-content="3">Healthy fats</div>
+          <div class="tab" data-content="4">Slower Digesing Carbs</div>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <img
+              srcset="/imgs/people-1--small.jpg 1x, /imgs/people-1.jpg 2x"
+              alt="Car"
+              class="content__img"
+            />
+            <div class="content-details">
+              <h4 class="content-details__title">Plant-based Protein</h4>
+              <p class="content-details__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+                nesciunt amet rem repellendus possimus nulla nisi molestias enim
+                eveniet cum similique odit accusantium eius, corrupti quaerat
+                consequuntur impedit omnis vel doloribus quidem! Animi optio
+                voluptatum dignissimos voluptatibus, ut commodi quas?
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img
+              srcset="/imgs/car-1--small.jpg 1x, /imgs/car-1.jpg 2x"
+              alt="Car"
+              class="content__img"
+            />
+            <div class="content-details">
+              <h4 class="content-details__title">Vitamins & Minerals</h4>
+              <p class="content-details__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis, at. Explicabo ipsam, corporis incidunt hic iste
+                culpa aut fugiat sint vel sed repellat tenetur earum saepe
+                veritatis adipisci nulla, repudiandae rem voluptate ducimus?
+                Dolorem similique repellat totam dignissimos optio quos
+                voluptatibus explicabo, obcaecati, ipsa nemo eligendi ducimus
+                maiores, saepe ipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img
+              srcset="/imgs/people-2--small.jpg 1x, /imgs/people-2.jpg 2x"
+              alt="Car"
+              class="content__img"
+            />
+            <div class="content-details">
+              <h4 class="content-details__title">Healthy fats</h4>
+              <p class="content-details__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quam, ratione distinctio in, sequi quia odio, culpa
+                quidem autem sint repellat dolor. Impedit nihil doloribus rem
+                voluptatibus sit ad corporis minus ducimus alias distinctio!
+                Debitis expedita iste iure qui rerum!
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img
+              srcset="/imgs/motor-1--small.jpg 1x, /imgs/motor-1.jpg 2x"
+              alt="Car"
+              class="content__img"
+            />
+            <div class="content-details">
+              <h4 class="content-details__title">Slower digesting carbs</h4>
+              <p class="content-details__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                consectetur deleniti vero sequi, possimus qui corrupti
+                doloribus? Et, dolore omnis molestias error velit iusto harum
+                repellat maxime amet, soluta qui repudiandae culpa tenetur dolor
+                architecto nisi iste neque totam? Suscipit maxime optio earum
+                consequatur esse?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-carousel" id="carousel">
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            minus!
+          </p>
+          <span class="carousel__author">Peter, Belgium</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            asperiores.
+          </p>
+          <span class="carousel__author">David, UK</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            debitis?
+          </p>
+          <span class="carousel__author">Patrik, Ukraine</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            voluptas?
+          </p>
+          <span class="carousel__author">Dimitri, Russia</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo
+            voluptas quas?
+          </p>
+          <span class="carousel__author">Josip, Croatia</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            praesentium!
+          </p>
+          <span class="carousel__author">Mušakt, Slovakia</span>
+        </div>
+        <div class="carousel">
+          <span class="carousel__quote">&#x201E;</span>
+          <p class="carousel__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+            accusamus.
+          </p>
+          <span class="carousel__author">Drin, Serbia</span>
+        </div>
+        <div class="carousel__btns">
+          <button class="carousel__btn carousel__btn--prev">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="carousel__btn carousel__btn--next">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonial__buttons">
+          <button
+            data-testimonial="0"
+            class="testimonial__btn testimonial__btn--active"
+          >
+            &nbsp;</button
+          ><button data-testimonial="1" class="testimonial__btn">&nbsp;</button
+          ><button data-testimonial="2" class="testimonial__btn">&nbsp;</button>
+        </div>
+        <div class="testimonials-container">
+          <div class="testimonial testimonial--active testimonial--active--1">
+            <div class="testimonial__text">
+              <p class="testimonial__paragraph">
+                While <span>Lessonly's software is exceptional</span>, their
+                people have taken this from a business exchange to a
+                partnership.
+              </p>
+              <div class="testimonial__author">
+                <p class="testimonial__author--name">Merge</p>
+                <p class="testimonial__author--job">Project Manager</p>
+              </div>
+            </div>
+            <div class="testimonial__img-box">
+              <img
+                class="testimonial__img"
+                srcset="/imgs/girl-1--small.png 1x, /imgs/girl-1.png 2x"
+                alt="Woman"
+              />
+            </div>
+          </div>
+          <div class="testimonial testimonial--active--2">
+            <div class="testimonial__text">
+              <p class="testimonial__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, reiciendis esse.
+                <span
+                  >, their people have taken this from a business exchange to
+                  a</span
+                >
+                partnership.
+              </p>
+              <div class="testimonial__author">
+                <p class="testimonial__author--name">Bro</p>
+                <p class="testimonial__author--job">Builder Manager</p>
+              </div>
+            </div>
+            <div class="testimonial__img-box">
+              <img
+                class="testimonial__img"
+                srcset="/imgs/woman-2--small.png 1x, /imgs/woman-2.png 2x"
+                alt="Person"
+              />
+            </div>
+          </div>
+          <div class="testimonial testimonial--active--3">
+            <div class="testimonial__text">
+              <p class="testimonial__paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+                itaque iure quos <span>veniam sint beatae reiciendis</span> at
+                tempora eligendi repellendus.
+              </p>
+              <div class="testimonial__author">
+                <p class="testimonial__author--name">Mario</p>
+                <p class="testimonial__author--job">Football Manager</p>
+              </div>
+            </div>
+            <div class="testimonial__img-box">
+              <img
+                srcset="/imgs/woman-3--small.png 1x, /imgs/woman-3.png 2x"
+                class="testimonial__img"
+                alt="Woman"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-logos" id="logos">
+        <h3 class="logos__title">The best creators trust us!</h3>
+        <div class="logos__container">
+          <div class="logo__box">
+            <ion-icon name="logo-alipay"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-amazon"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-google"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-android"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-discord"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-edge"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-react"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-javascript"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-paypal"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-sass"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-xbox"></ion-icon>
+          </div>
+          <div class="logo__box">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </div>
+        </div>
+      </section>
+      <section class="section-steps" id="steps">
+        <div class="step__line">&nbsp;</div>
+        <span class="step__number step__number--1">1</span>
+        <span class="step__number step__number--2">2</span>
+        <span class="step__number step__number--3">3</span>
+        <span class="step__number step__number--4">4</span>
+
+        <h4 class="step__title">Build a programming quiz</h4>
+        <h4 class="step__title">Take the coding challanges</h4>
+        <h4 class="step__title">Record a 3-minute video</h4>
+        <h4 class="step__title">Reicive offers!</h4>
+        <span class="step__time">(-15 min)</span>
+        <span class="step__time">(-90 min)</span>
+        <span class="step__time"> (-5 min)</span>
+        <span class="step__time">(as long as you want)</span>
+        <p class="step__details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="step__details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="step__details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          voluptatum fugiat quod!.
+        </p>
+        <p class="step__details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta
+          vitae.
+        </p>
+      </section>
+      <section class="section-form" id="form">
+        <form action="#" class="form">
+          <h4 class="form__title">Sign up for free!</h4>
+          <div class="form__group">
+            <input type="text" required id="fullname" placeholder="Full name" />
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Email address"
+            />
+            <label for="email">Email address</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="tel"
+              required
+              minlength="12"
+              id="phonenumber"
+              placeholder="Phone number"
+            />
+            <label for="phonenumber">Phone Number</label>
+          </div>
+          <div class="form--radio__group">
+            <div class="radio">
+              <input type="radio" id="student" name="job" checked />
+              <div class="radio__checkbox"></div>
+              <label for="student">Student</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="teacher" name="job" />
+              <div class="radio__checkbox"></div>
+
+              <label for="teacher">Teacher</label>
+            </div>
+            <button class="form__submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <section class="section-range" id="range">
+        <div class="range">
+          <div class="sliderValue">
+            <span class="sliderValueSpan">100</span>
+          </div>
+          <div class="field">
+            <div class="value value--left">0</div>
+            <input type="range" min="0" max="200" value="100" steps="1" />
+            <div class="value value--right">200</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-modal" id="modal">
+        <button id="popup-trigger" class="popup__btn">Open Popup</button>
+
+        <div id="popup" class="popup">
+          <div class="popup__content">
+            <span id="popup-close">&times;</span>
+            <h2 class="popup__title">Popup Window</h2>
+            <p class="popup__text">This is a simple popup window.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="plane">
+          <div class="plane__body">
+            <div class="plane__tail"></div>
+            <div class="plane__windows">
+              <div class="plane__window"></div>
+              <div class="plane__window"></div>
+              <div class="plane__window"></div>
+              <div class="plane__window"></div>
+              <div class="plane__window"></div>
+              <div class="plane__window"></div>
+            </div>
+            <div class="plane__captain-window"></div>
+          </div>
+          <div class="plane__wing--1 plane__wing"></div>
+          <div class="plane__wing--2 plane__wing"></div>
+        </div>
+        <div class="cta">
+          <div class="cta__triangle cta__triangle--1"></div>
+          <div class="cta__triangle cta__triangle--2"></div>
+          <div class="cta__triangle cta__triangle--3"></div>
+          <div class="cta__triangle cta__triangle--4"></div>
+          <div class="cta__box cta__box--1"></div>
+          <h5 class="cta__title">Get started with Sketch today</h5>
+          <p class="cta__details">
+            Turn your ideas into incredible products with a 30-day trial.
+          </p>
+          <button class="cta__btn">Try for Free</button>
+        </div>
+        <div class="section-solar-system">
+          <div class="solar-system__container">
+            <div class="solar-system__sun"></div>
+            <div class="solar-system__earth">
+              <div class="solar-system__moon"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" class="footer__link">Tesla &copy; 2021</a>
+      <a href="#" class="footer__link">Privacy & Legacy</a>
+      <a href="#" class="footer__link">Contact</a>
+      <a href="#" class="footer__link">Careers</a>
+      <a href="#" class="footer__link">News</a>
+      <a href="#" class="footer__link">Locations</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@mixin responsive($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+$bp-large: 1000px;
+$bp-medium: 800px;
+$bp-medium-small: 650px;
+$bp-small: 500px;
+
+@include responsive($bp-large) {
+  html {
+    font-size: 9px !important;
+  }
+}
+@include responsive($bp-medium) {
+  html {
+    font-size: 8px !important;
+  }
+}
+@include responsive($bp-medium-small) {
+  html {
+    font-size: 7px !important;
+  }
+}
+@include responsive($bp-small) {
+  html {
+    font-size: 6px !important;
+  }
+}

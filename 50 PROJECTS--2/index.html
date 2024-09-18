@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50 projects v2</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/imgs/sass-favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/594bf93c22.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <button class="nav__open">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <div class="nav nav__black">
+      <div class="nav nav__red">
+        <div class="nav nav__white">
+          <button class="nav__close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <img
+            src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
+            alt="Logo"
+            class="nav__logo"
+          />
+
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Teams</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Locations</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Life at Netflix</a>
+            </li>
+            <li class="nav__item">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Netflix culture memo</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Work life balance</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Inclusion & diversity</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Designing & developing <span>beyond</span> <span>the ordinary</span>
+        </h1>
+        <p class="hero__text">
+          Join us in exploring the beauty of web components, one step at a time.
+          Copy the code provided in VS code and enjoy!
+        </p>
+
+        <a href="#" target="_blank" class="hero__cta">Sign up &rarr;</a>
+
+        <div class="hero__icon">
+          <ion-icon name="logo-xbox"></ion-icon>
+        </div>
+        <div class="hero__icon">
+          <ion-icon name="logo-playstation"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <section class="password-generator">
+      <h4 class="password-generator__title">Password Generator</h4>
+      <div class="password-generator__resultbox">
+        <span class="password-generator__result"></span>
+        <button class="password-generator__btn btn-copy" id="clipboard">
+          <ion-icon name="copy"></ion-icon>
+        </button>
+      </div>
+      <div class="password-generator__settings">
+        <div class="password-generator__setting">
+          <label>Password Length</label>
+          <input type="number" id="length" min="4" max="20" value="20" />
+        </div>
+        <div class="password-generator__setting">
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="password-generator__setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="password-generator__setting">
+          <label>Include numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="password-generator__setting">
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+
+      <button class="password-generator__btn--large" id="generate">
+        Generate Password
+      </button>
+    </section>
+
+    <div class="toggle-checkboxes">
+      <div class="toggle__container">
+        <input type="checkbox" id="good" class="toggle" />
+        <label for="good" class="toggle__label">
+          <div class="toggle__ball"></div>
+        </label>
+        <span>Good</span>
+      </div>
+
+      <div class="toggle__container">
+        <input type="checkbox" id="cheap" class="toggle" />
+        <label for="cheap" class="toggle__label">
+          <div class="toggle__ball"></div>
+        </label>
+        <span>Cheap</span>
+      </div>
+
+      <div class="toggle__container">
+        <input type="checkbox" id="fast" class="toggle" />
+        <label for="fast" class="toggle__label">
+          <div class="toggle__ball"></div>
+        </label>
+        <span>Fast</span>
+      </div>
+    </div>
+    <section class="notes">
+      <button class="notes__add">
+        <ion-icon name="add-outline"></ion-icon> Add note
+      </button>
+    </section>
+    <section class="countdown">
+      <div class="counter">
+        <div class="counter__nums">
+          <span class="counter__num counter__num--goIn">3</span>
+          <span class="counter__num">2</span>
+          <span class="counter__num">1</span>
+          <span class="counter__num">0</span>
+        </div>
+        <p class="counter__title">Get Ready</p>
+      </div>
+
+      <div class="counter__final">
+        <p class="counter__go">GO</p>
+        <button class="counter__replay">
+          <span>Replay</span>
+        </button>
+      </div>
+    </section>
+    <section class="hoverboard"></section>
+    <section class="bg-boxes">
+      <button class="boxes-3d__btn">Magic</button>
+      <div class="boxes-3d boxes-3d--seperated"></div>
+    </section>
+    <section class="verifyCode">
+      <input
+        type="number"
+        class="code"
+        min="0"
+        max="9"
+        placeholder="0"
+        required="required"
+      /><input
+        type="number"
+        class="code"
+        min="0"
+        max="9"
+        placeholder="0"
+        required="required"
+      /><input
+        type="number"
+        class="code"
+        min="0"
+        max="9"
+        placeholder="0"
+        required="required"
+      /><input
+        type="number"
+        class="code"
+        min="0"
+        max="9"
+        placeholder="0"
+        required="required"
+      /><input
+        type="number"
+        class="code"
+        min="0"
+        max="9"
+        placeholder="0"
+        required="required"
+      />
+    </section>
+    <section class="user-filter">
+      <header class="user-filter__header">
+        <p class="user-filter__title">Live user filter</p>
+        <small class="user-filter__text"
+          >Search by name and/or by location</small
+        >
+        <input
+          type="text"
+          placholder="Search people..."
+          class="user-filter__input"
+        />
+      </header>
+
+      <ul class="user-filter__list">
+        <li class="user-filter__item">
+          <h4>Loading...</h4>
+        </li>
+      </ul>
+    </section>
+    <section class="section-yoda">
+      <div class="yoda">
+        <img
+          class="logo"
+          src="https://assets.codepen.io/308367/yoda-logo.webp"
+          alt=""
+        />
+        <img
+          class="front-image"
+          src="https://assets.codepen.io/308367/yoda-front.png"
+          alt="yoda holding his lightsabre up, the glow highlighting an angry look on his face"
+        />
+        <img
+          class="bg-image"
+          src="https://assets.codepen.io/308367/yoda-on-dagobah.jpg"
+          alt="yoda looking peaceful on dagobah"
+        />
+      </div>
+
+      <span class="inspiration"
+        >Inspired by
+        <a href="https://codepen.io/gayane-gasparyan/details/wvxewXO"
+          >this CodePen by Gayane Gasparyan</a
+        ></span
+      >
+      <a class="yt" href="https://youtu.be/DCRcFf39SYo"> Watch the tutorial </a>
+    </section>
+    <section class="feedback-UI">
+      <div class="feedback__panel">
+        <strong class="feedback__title"
+          >How satisfied are you with our <br />
+          customer support performance?</strong
+        >
+        <div class="feedback__ratings">
+          <div class="feedback__rating">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png"
+              alt=""
+              class="feedback__emoji--img"
+            />
+            <small class="feedback__emoji--text">Unhappy</small>
+          </div>
+
+          <div class="feedback__rating">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png"
+              alt=""
+              class="feedback__emoji--img"
+            />
+            <small class="feedback__emoji--text">Neutral</small>
+          </div>
+
+          <div class="feedback__rating feedback__rating--active">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png"
+              alt=""
+              class="feedback__emoji--img"
+            />
+            <small class="feedback__emoji--text">Satisfied</small>
+          </div>
+        </div>
+        <button class="feedback__send">Send Review</button>
+      </div>
+    </section>
+    <section class="testimonials" style="margin-top: 2rem">
+      <div class="testimonial-container">
+        <div class="progress-bar"></div>
+        <div class="fas fa-quote-right fa-quote"></div>
+        <div class="fas fa-quote-left fa-quote"></div>
+        <p class="testimonial">
+          I've worked with literally hundreds of HTML/CSS developers and I have
+          to say the top spot goes to this guy. This guy is an amazing
+          developer. He stresses on good, clean code and pays heed to the
+          details. I love developers who respect each and every aspect of a
+          throughly thought out design and do their best to put it in code. He
+          goes over and beyond and transforms ART into PIXELS - without a
+          glitch, every time.
+        </p>
+        <div class="user">
+          <img
+            src="https://randomuser.me/api/portraits/women/46.jpg"
+            alt="user"
+            class="user-image"
+          />
+          <div class="user-details">
+            <h4 class="username">Miyah Myles</h4>
+            <p class="role">Marketing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-700 flex justify-center items-center min-h-screen">
+      <div class="bg-gray-900 p-16 rounded-2xl shadow w-full max-w-sm">
+        <h1 class="text-4xl text-center text-white">Timer</h1>
+
+        <!-- Create the circle -->
+        <div
+          id="conic"
+          class="bg-conic flex items-center justify-center w-60 h-60 mx-auto my-10 rounded-full relative"
+        >
+          <p id="timer" class="text-blue-200 relative text-5xl z-10">00:00</p>
+
+          <!-- Create the inner cirlce and line -->
+          <div
+            class="w-[calc(100%-4px)] aspect-square bg-gray-800 rounded-full absolute inset-[2px]"
+          ></div>
+          <!-- Create the hand/marker -->
+          <div class="hand h-1/2 absolute top-0">
+            <span
+              class="w-2 h-2 bg-white rounded-full absolute -top-1 -left-1"
+            ></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-6">
+          <button
+            id="reset"
+            class="flex justify-center items-center w-10 h-10 bg-blue-300 rounded-full"
+          >
+            <i class="fas fa-refresh"></i>
+          </button>
+
+          <button
+            id="play"
+            class="flex justify-center items-center w-10 h-10 bg-blue-300 rounded-full group"
+          >
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

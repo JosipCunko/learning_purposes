@@ -1,0 +1,166 @@
+.elements__inputs {
+  padding: 4.8rem;
+  background-color: #ddd;
+  border-radius: 100px;
+  margin-bottom: 3.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  align-items: center;
+
+  &--input {
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+    background-color: inherit;
+    height: 4rem;
+    flex: 1;
+    color: #555;
+
+    &::placeholder {
+      font-family: inherit;
+      font-size: 1.6rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--input-box {
+    font-family: Lato;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    gap: 1.6rem;
+
+    button {
+      color: #fff;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      font-weight: 600;
+    }
+  }
+  &--input-box--1 {
+    border-radius: 100px;
+    height: 5rem;
+    border: 1px solid $color-primary-300;
+    padding: 1.6rem 3.2rem 1.6rem 1.6rem;
+    background-color: $color-primary-100;
+
+    ion-icon {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &--input-box--2 {
+    height: 7rem;
+    padding: 0.6rem 0.6rem 0.6rem 3.2rem;
+    background-color: #fff;
+    border: none;
+
+    justify-content: space-between;
+
+    button {
+      border-radius: 100px;
+      height: 6rem;
+      background-color: $color-primary-800;
+    }
+  }
+
+  &--input-box--3 {
+    height: 5rem;
+    background-color: #fff;
+    border: none;
+    padding: 1.2rem 0.6rem 1.2rem 1.6rem;
+    justify-content: space-between;
+    border-radius: 5px;
+
+    button {
+      border-radius: 100px;
+      height: 4rem;
+      background-color: rgb(168, 90, 221);
+      border-radius: 5px;
+      font-size: 1.6rem;
+    }
+  }
+
+  &--select-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    justify-self: center;
+    height: 5rem;
+  }
+  &--select-box {
+    appearance: none;
+    border: none;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    color: #555;
+    font-size: 1.8rem;
+    background-color: $color-primary-100;
+
+    option {
+      background-color: $color-primary-100;
+    }
+  }
+  &--icon-container {
+    width: 5rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary-200;
+
+    ion-icon {
+      font-size: 3.6rem;
+      font-weight: 800;
+    }
+  }
+
+  &--input-box--4 {
+    background-color: #fff;
+    border: 2px solid #000;
+    justify-self: center;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &--input--4 {
+    border: none;
+    width: 3rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &--btn {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    background-color: #eee;
+    color: #333 !important;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+
+    &-plus {
+      border-left: 2px solid #000;
+    }
+    &-minus {
+      border-right: 2px solid #000;
+      padding: 0.6rem 1.2rem;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+  }
+}

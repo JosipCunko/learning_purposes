@@ -1,0 +1,76 @@
+/**************/
+/**************/
+/*SLIDER*/
+/**************/
+/**************/
+.slider__btn {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(255, 238, 223);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+
+  z-index: 1;
+  padding: 1.5rem;
+}
+.slider__btn ion-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: hsl(29, 100%, 60%);
+}
+.slider__btn--left {
+  left: 0;
+  transform: translate(5%, -50%);
+}
+.slider__btn--right {
+  right: 0;
+  transform: translate(-5%, -50%);
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -1.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.dot {
+  height: 1rem;
+  width: 1rem;
+  background-color: #fff;
+  border: 1px solid hsl(29, 100%, 60%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot--active {
+  background-color: hsl(29, 100%, 60%);
+}
+
+.slider-links {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.slider-links--link:link,
+.slider-links--link:visited {
+  color: hsl(29, 100%, 60%);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.slider-links--link:hover,
+.slider-links--link:active {
+  border-bottom: 1px solid hsl(29, 100%, 60%);
+}

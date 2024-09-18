@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "SUSE";
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  width: 100vw;
+  background-color: #111;
+  color: #eee; }
+
+.todo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  place-items: center;
+  width: 60rem;
+  max-width: 80%; }
+  .todo__heading {
+    font-size: 4.4rem;
+    background-image: linear-gradient(90deg, #5eead4, #22d3ee);
+    color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+    font-weight: 600; }
+  .todo__form {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    width: 100%;
+    position: relative; }
+  .todo__input {
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: #eee;
+    border: 1px solid #666;
+    background-color: transparent;
+    border-radius: 17px;
+    padding: 0.6rem 1.2rem; }
+  .todo__btn {
+    background-image: linear-gradient(90deg, #5eead4, #22d3ee);
+    border-radius: 17px;
+    padding: 1.7rem 1.6rem;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    position: absolute;
+    inset: 0 0 0 auto; }
+  .todo__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 96%; }
+  .todo__item {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    gap: 1rem;
+    align-items: center;
+    background-color: #333;
+    font-size: 1.6rem;
+    padding: 1.4rem 1.2rem;
+    width: 100%;
+    border-radius: 5px; }
+    .todo__item--active .todo__text {
+      text-decoration: line-through;
+      color: #666; }
+    .todo__item--active .todo__check {
+      background-color: #5eead4; }
+      .todo__item--active .todo__check ion-icon {
+        display: block; }
+  .todo #todo__checkbox {
+    display: none; }
+    .todo #todo__checkbox:checked + .todo__check {
+      background-color: #5eead4; }
+      .todo #todo__checkbox:checked + .todo__check ion-icon {
+        display: block; }
+    .todo #todo__checkbox:checked ~ .todo__text {
+      text-decoration: line-through;
+      color: #666; }
+  .todo__check {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #5eead4;
+    background-color: transparent;
+    cursor: pointer; }
+    .todo__check ion-icon {
+      font-size: 1.6rem;
+      color: #333;
+      display: none; }
+  .todo__delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 1.6rem;
+    transition: all 0.3s ease; }
+    .todo__delete:hover {
+      color: red;
+      scale: 1.1; }

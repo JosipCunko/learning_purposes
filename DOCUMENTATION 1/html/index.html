@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Documentantion</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css copy/general.css" />
+    <link rel="stylesheet" href="/css copy/style.css" />
+    <link rel="stylesheet" href="/css copy/styleResponsive.css" />
+    <link rel="stylesheet" href="/css copy/pagination.css" />
+    <link rel="stylesheet" href="/css copy/slider.css" />
+
+    <script defer src="/script.js"></script>
+    <script defer src="/scriptSlider.js"></script>
+    <script defer src="/scriptPagination.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logos">
+        <ion-icon
+          class="logo logo--html"
+          name="logo-html5"
+          alt="html logo"
+        ></ion-icon>
+        <ion-icon
+          class="logo logo--css"
+          name="logo-css3"
+          alt="css logo"
+        ></ion-icon>
+        <ion-icon
+          class="logo logo--js"
+          name="logo-javascript"
+          alt="javascript logo"
+        ></ion-icon>
+      </div>
+
+      <nav class="header__navigation">
+        <a class="header__link header__link--2" href="#section-design-ideas"
+          >Design ideas</a
+        >
+        <a class="header__link header__link--3" href="#section-components"
+          >Components</a
+        >
+        <a class="header__link header__link--4" href="#footer">Footer</a>
+      </nav>
+    </header>
+    <section class="section-hero">
+      <div class="hero-text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--bigger-text"
+            >Josip's documentation</span
+          >
+          <span class="heading-primary--smaller-text"
+            >of web components and design ideas</span
+          >
+        </h1>
+        <div class="hero__btns">
+          <a href="/html/modal.html" class="btn btn--open-modal">Sign in</a>
+          <button class="btn btn--show-modal">Get started</button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <h2 id="section-design-ideas">
+        <div class="section-intro">
+          <h2 class="heading-secondary">DESIGN-IDEAS</h2>
+        </div>
+      </h2>
+      <h2 id="section-components">
+        <div class="section-intro">
+          <h2 class="heading-secondary">COMPONENTS</h2>
+        </div>
+      </h2>
+      <section class="section-z-pattern section--reveal">
+        <div class="section-intro">
+          <p class="section-title">z-pattern and lazy loading imagges</p>
+          <h2 class="heading-secondary">
+            How to deploy a website so everyone can see it
+          </h2>
+        </div>
+        <div class="grid grid--2-cols grid--align-v">
+          <div class="z-pattern--text-box">
+            <p class="step-number">01</p>
+            <p class="heading-tertiary">Firstly create a Netlify account</p>
+            <p class="step-description">
+              Netlify is a free web app that allows users to deploy websites
+              with a domain name and https safety lock. Many frontend developers
+              use Netlify because it's easy to use, practical and also it's
+              linked to Git account
+            </p>
+          </div>
+          <div class="z-pattern__img-box">
+            <img
+              alt="Z-pattern-image"
+              class="z-pattern__img lazy-img"
+              src="/imgs/z-pattern-img-1--small.png"
+              data-src="/imgs/z-pattern-img-1.png"
+            />
+          </div>
+          <div class="z-pattern__img-box">
+            <img
+              alt="Z-pattern-image"
+              class="z-pattern__img lazy-img"
+              src="/imgs/z-pattern-img-2--small.png"
+              data-src="/imgs/z-pattern-img-2.png"
+            />
+          </div>
+          <div class="z-pattern--text-box">
+            <p class="step-number">02</p>
+            <p class="heading-tertiary">Add your site to Netlify</p>
+            <p class="step-description">
+              Import an existing project form a Git repository, pick a starter
+              template or just deploy manually by dragging your folder of HTML,
+              CSS and JS files to box at the bottom of the page
+            </p>
+          </div>
+          <div class="z-pattern--text-box">
+            <p class="step-number">03</p>
+            <p class="heading-tertiary">Create a domain name</p>
+            <p class="step-description">
+              You can choose your own domain name by just editing page URL. Once
+              you do that, it will be easier for everyone to access your page by
+              just typing it in google searchbar.
+            </p>
+          </div>
+          <div class="z-pattern__img-box">
+            <img
+              class="z-pattern__img lazy-img"
+              alt="Z-pattern-image"
+              src="/imgs/z-pattern-img-3--small.png"
+              data-src="/imgs/z-pattern-img-3.png"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-cards section--reveal">
+        <div class="section-intro">
+          <p class="section-title">Shopping cards</p>
+          <h2 class="heading-secondary">
+            Get access to the most complete AI ever!
+          </h2>
+        </div>
+        <div class="grid grid--3-cols">
+          <div class="card">
+            <div class="card__img-box">
+              <img class="card__img" src="/imgs/gpt-free.webp" />
+            </div>
+            <div class="card__text-box">
+              <p class="card__title"><span>Besplatno</span></p>
+              <p class="card__price">$0 mjesečno</p>
+              <a
+                href="https://chatgpt.com/#pricing"
+                class="btn-cards btn--card btn--free"
+                >Trenutni plan</a
+              >
+              <ul class="card__list">
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Pomoć u pisanju, rješavanju problema i još toga</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Pristup modelu GPT-4o mini</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Ograničen pristup modelu GPT-4o</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span
+                    >Ograničen pristup naprednoj analizi podataka, učitavanju
+                    datoteka, viziji i osobno prilagođenim GPT-ovima</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-box">
+              <img class="card__img" src="/imgs/gpt-plus.jpg" />
+            </div>
+            <div class="card__text-box">
+              <p class="card__title">
+                <ion-icon class="logo--plus" name="star-outline"></ion-icon>
+                <span>Plus</span>
+              </p>
+              <p class="card__price">$20 mjesečno</p>
+              <a
+                href="https://chatgpt.com/#pricing"
+                class="btn-cards btn--card btn--plus"
+              >
+                Nadogradite na Plus
+              </a>
+              <ul class="card__list">
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Rani pristup novim značajkama</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Pristup modelu GPT-4o, GPT-4o mini, GPT-4</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span>Do 5x više poruka za GPT-4o</span>
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span
+                    >Pristup naprednoj analizi podataka, učitavanju datoteka,
+                    viziji i mrežnom pregledavanju</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-box">
+              <img class="card__img" src="/imgs/gpt-team.png" />
+            </div>
+            <div class="card__text-box">
+              <p class="card__title">
+                <ion-icon class="logo--team" name="people-outline"></ion-icon
+                ><span>Tim</span>
+              </p>
+              <p class="card__price">$25 mjesečno</p>
+
+              <a
+                href="https://chatgpt.com/#pricing"
+                class="btn-cards btn--card btn--team"
+              >
+                Nadogradite na Tim
+              </a>
+              <ul class="card__list">
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span
+                    >Izrađujte i dijelite GPT-ove uz svoj radni prostor</span
+                  >
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span
+                    >Administratorska konzola za upravljanje radnim
+                    prostorom</span
+                  >
+                </li>
+                <li class="card__list-text">
+                  <div class="list-checkmark">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                  <span
+                    >Veća ograničenja za GPT-4, GPT-4o, i alate poput
+                    generiranja slika modela DALL·E, napredna analiza podataka,
+                    mrežno pregledavanje i više</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-table section--reveal">
+        <div class="section-intro">
+          <p class="section-title">Table</p>
+          <h2 class="heading-secondary">See what measurements suits you</h2>
+        </div>
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Chair</th>
+                <th>The Laid Back</th>
+                <th>The Worker Bee</th>
+                <th>The Chair 4/2</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>Width</th>
+                <td>80 cm</td>
+                <td>60 cm</td>
+                <td>220 cm</td>
+              </tr>
+              <tr>
+                <th>Height</th>
+                <td>100 cm</td>
+                <td>110 cm</td>
+                <td>90 cm</td>
+              </tr>
+              <tr>
+                <th>Depth</th>
+                <td>70 cm</td>
+                <td>65 cm</td>
+                <td>80 cm</td>
+              </tr>
+              <tr>
+                <th>Weight</th>
+                <td>16 kg</td>
+                <td>22 kg</td>
+                <td>80 kg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section-accordion section--reveal">
+        <div class="section-intro">
+          <p class="section-title">Accordion</p>
+          <h2 class="heading-secondary">Frequently asked questions</h2>
+        </div>
+        <div class="accordion">
+          <div class="item" data-number="1">
+            <p class="number">01</p>
+            <p class="text">Where are these chairs assembled?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+                repellendus cupiditate aperiam! Incidunt amet quo neque.
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+                </li>
+                <li>Tempora, et atque officia at consequatur laborum!</li>
+                <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item" data-number="2">
+            <p class="number">02</p>
+            <p class="text">How long do I have to return my chair?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+                repellendus cupiditate aperiam! Incidunt amet quo neque.
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+                </li>
+                <li>Tempora, et atque officia at consequatur laborum!</li>
+                <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item" data-number="3">
+            <p class="number">03</p>
+            <p class="text">Do you ship to countries outside the EU?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+                repellendus cupiditate aperiam! Incidunt amet quo neque.
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+                </li>
+                <li>Tempora, et atque officia at consequatur laborum!</li>
+                <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slider section--reveal" id="section-slider">
+        <div class="section-intro">
+          <p class="section-title">Slider v1</p>
+          <h2 class="heading-secondary">Listen to some of this quotes</h2>
+        </div>
+        <div class="slider">
+          <div class="slide slide--active">
+            <img
+              class="author-image"
+              src="/imgs/testimonial-author-img-1.jpg"
+              alt="Slider img"
+            />
+
+            <blockquote class="testimonial">
+              <h3 class="testimonial-heading">Best financial decision ever!</h3>
+              <p class="testimonial-text">
+                "Discovering the path to financial freedom often starts with a
+                single, pivotal choice. This article delves into the moment that
+                transformed my financial future, offering insights and
+                strategies to help you make your own best financial decision
+                ever. "
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">Project Manager</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <img
+              class="author-image"
+              src="/imgs/testimonial-author-img-2.jpeg"
+              alt="Slider img"
+            />
+
+            <blockquote class="testimonial">
+              <h3 class="testimonial-heading">You never heard about this!</h3>
+              <p class="testimonial-text">
+                "In the high-stakes world of football, where every decision can
+                make or break a season, there’s one strategy that’s often
+                overlooked—but it’s a game-changer. This article uncovers a
+                surprising approach used by an experienced football team
+                manager, a tactic so effective yet rarely discussed in the
+                open.".
+              </p>
+              <p class="testimonial-author">Mario</p>
+              <p class="testimonial-job">Footbal Team Manager</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <img
+              class="author-image"
+              src="/imgs/testimonial-author-img-3.jpg"
+              alt="Slider img"
+            />
+
+            <blockquote class="testimonial">
+              <h3 class="testimonial-heading">Listen to this useful advice!</h3>
+              <p class="testimonial-text">
+                "Sometimes, the best advice is simple yet powerful. In this
+                article, we break down essential tips and insights that can help
+                you make smarter choices in life, work, and beyond. Whether
+                you're navigating a tough decision, looking to improve your
+                daily habits, or just seeking a little inspiration, this is the
+                advice you won't want to miss."
+              </p>
+              <p class="testimonial-author">Marijanic</p>
+              <p class="testimonial-job">Talker</p>
+            </blockquote>
+          </div>
+          <button class="slider__btn slider__btn--left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="slider__btn slider__btn--right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+          <div class="dots"></div>
+        </div>
+        <div class="slider-links">
+          <a class="slider-links--link" href="sliderv2.html"
+            >See another example of a slider &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-cta section--reveal" id="section-cta">
+        <div class="section-intro">
+          <p class="section-title text-color-white">Call to action form</p>
+          <h2 class="heading-secondary">Try 60 days for free!</h2>
+        </div>
+
+        <div class="container">
+          <div class="cta">
+            <div class="cta__text-box">
+              <p class="heading-tertiary">
+                Once you start, there is no going back
+              </p>
+              <form action="#" class="cta__form">
+                <div class="cta__label-input">
+                  <label for="full-name">Full name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="Will Smith"
+                    required
+                  />
+                </div>
+
+                <div class="cta__label-input">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="willsmith@gmail.com"
+                    required
+                  />
+                </div>
+
+                <div class="cta__label-input">
+                  <label for="phone-number">Phone number</label>
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    placeholder="041 3133 614"
+                    required
+                  />
+                </div>
+                <div class="cta__label-input">
+                  <label for="notifications">Allow notifications</label>
+                  <input type="checkbox" id="notifications" />
+                </div>
+                <div class="btns">
+                  <button class="btn btn--cta sign-up">Sign up</button>
+                  <a href="/html/modal.html" class="btn btn--cta log-in"
+                    >Sign in</a
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="cta__img-box">
+              <img
+                src="/imgs/form-img2.jpg"
+                alt="Form image"
+                class="form-img"
+              />
+            </div>
+          </div>
+          <!-- <div class="form--submit-message">
+            <h2 class="heading-secondary">Thank you for submiting this form</h2>
+            <p>If this had any trouble, please contact me.</p>
+            <ion-icon
+              class="form--submit--close"
+              name="close-outline"
+            ></ion-icon>
+          </div> -->
+        </div>
+      </section>
+      <section class="section-tabbed-component section--reveal">
+        <div class="section-intro">
+          <p class="section-title">Tabbed component</p>
+          <h2 class="heading-secondary">
+            Everything as simple as possible, but no simpler
+          </h2>
+        </div>
+        <div class="tabbed-component">
+          <div class="tabbed--btns">
+            <button
+              class="btn--tabbed btn--tabbed--1 btn--tabbed--active"
+              data-tab="1"
+            >
+              <span>01</span>Instant Transfers
+            </button>
+            <button class="btn--tabbed btn--tabbed--2" data-tab="2">
+              <span>02</span>Instant Loans
+            </button>
+            <button class="btn--tabbed btn--tabbed--3" data-tab="3">
+              <span>03</span>Instant Closing
+            </button>
+          </div>
+          <div
+            class="tabbed--content tabbed--content--1 tabbed-content--active"
+          >
+            <div class="tabbed--content--icon icon--v1">
+              <ion-icon
+                class="tabbed--icon icon--1"
+                name="cloud-upload-outline"
+              ></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">
+              Tranfser money to anyone, instantly!
+            </h3>
+            <p class="tabbed--description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.ud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat..exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+          </div>
+          <div class="tabbed--content tabbed--content--2">
+            <div class="tabbed--content--icon icon--v2">
+              <ion-icon
+                class="tabbed--icon icon--2"
+                name="home-outline"
+              ></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">
+              Buy a home or make your dreams come true.
+            </h3>
+            <p class="tabbed--description">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.u fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="tabbed--content tabbed--content--3">
+            <div class="tabbed--content--icon icon--v3">
+              <ion-icon
+                class="tabbed--icon icon--3"
+                name="person-circle-outline"
+              ></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">
+              No longer need your account? Close it now.
+            </h3>
+            <p class="tabbed--description">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mou fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.u fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pagination">
+        <div class="pagination"></div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <ul class="footer-links">
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Pricing</a></li>
+          <li><a class="footer-link" href="#">Teams of Use</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+          <li><a class="footer-link" href="#">Blogs</a></li>
+          <li><a class="footer-link" href="#">Contact us</a></li>
+        </ul>
+        <div class="footer-logo">
+          <ion-icon name="logo-react"></ion-icon>
+        </div>
+        <p class="copyright">
+          &copy; Copyright by <span> Josip Čunko </span>. This is my
+          documentation mostly of web-components. I didnt come up on this all on
+          my own, I got inspiration from many different websites.
+        </p>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <h2 class="heading-secondary">
+        Open your bank account in just <span>5 minutes</span>
+      </h2>
+
+      <form action="#" class="modal__form">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" required />
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" required />
+
+        <label for="email">Email address</label>
+        <input id="email" type="email" required />
+        <button class="btn modal__form--button">Next step &rarr;</button>
+      </form>
+      <ion-icon
+        name="close-outline"
+        class="form--submit--close modal__btn--close"
+      ></ion-icon>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

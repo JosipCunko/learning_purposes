@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css copy/modal.css" />
+    <link rel="stylesheet" href="/css copy/general.css" />
+
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <h2 class="modal__header">Sign in</h2>
+        <form class="modal__form">
+          <div class="label-input--sign-in">
+            <label for="username"
+              ><ion-icon name="person-outline"></ion-icon
+            ></label>
+            <input
+              type="text"
+              id="username"
+              minlength="3"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="label-input--sign-in">
+            <label for="password"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></label>
+            <input
+              type="current-password"
+              id="password"
+              placeholder="Password"
+              minlength="6"
+              required
+            />
+          </div>
+          <button class="modal__btn--sign-in">Sign in</button>
+        </form>
+        <div class="no-account-box">
+          <a href="#" class="modal__link--forgot-password">Forgot Password?</a>
+          <div class="no-account">
+            Don't have an account?
+            <a href="/html/index.html#section-cta">Create one</a>
+          </div>
+        </div>
+      </div>
+      <div class="form--submit-message">
+        <h2 class="heading-modal">Thank you for submiting this form</h2>
+        <p>If you had any trouble, please contact me.</p>
+        <ion-icon class="form--submit--close" name="close-outline"></ion-icon>
+      </div>
+    </div>
+    <script>
+      //DOESNT WORK
+      // window.addEventListener("beforeunload", function (e) {
+      //   e.returnValue = "";
+      // });
+    </script>
+  </body>
+</html>

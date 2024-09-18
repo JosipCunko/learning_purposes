@@ -1,0 +1,131 @@
+.breadcrumbsPagination {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.components__breadcrumbs--1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(63, 67, 82);
+  border-radius: 5px;
+  color: rgb(57, 206, 206);
+  padding: 1.2rem 2.4rem;
+  width: fit-content;
+  ion-icon {
+    font-size: 1.2rem;
+  }
+}
+.components__pagination {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+.components__pagination--1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  ion-icon {
+    color: black;
+    background-color: #ddd;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  a:link,
+  a:visited {
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+
+  a:hover {
+    background-color: #aaa;
+  }
+}
+.components__pagination--2 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  a:first-child,
+  a:last-child {
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid cadetblue;
+
+    ion-icon {
+      color: cadetblue;
+    }
+  }
+  &-link:link,
+  &-link:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    padding: 2rem;
+    color: cadetblue;
+    transition: all 0.3s;
+  }
+  &-link:hover,
+  &-link:active {
+    background-color: cadetblue;
+    color: white;
+  }
+}
+.components__pagination--3 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  a:first-child,
+  a:last-child {
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ddd;
+    background-color: #eee;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  &-link:link,
+  &-link:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 3.6rem;
+    width: 3.6rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+  }
+  &-link:hover,
+  &-link:active {
+    background-color: #eee;
+  }
+}

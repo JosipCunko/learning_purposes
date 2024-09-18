@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+$color-primary: #5eead4;
+$color-black: #333;
+$color-icon: #666;
+$color-white: #eee;
+$gradient-primary: linear-gradient(90deg, #5eead4, #22d3ee);
+
+body {
+  font-family: "SUSE";
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  width: 100vw;
+  background-color: #111;
+  color: $color-white;
+}
+.todo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  place-items: center;
+
+  width: 60rem;
+  max-width: 80%;
+
+  &__heading {
+    font-size: 4.4rem;
+    background-image: $gradient-primary;
+    color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+
+    width: 100%;
+    position: relative;
+  }
+  &__input {
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: $color-white;
+    border: 1px solid $color-icon;
+    background-color: transparent;
+    border-radius: 17px;
+    padding: 0.6rem 1.2rem;
+  }
+  &__btn {
+    background-image: $gradient-primary;
+    border-radius: 17px;
+    padding: 1.7rem 1.6rem;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-black;
+    position: absolute;
+    inset: 0 0 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 96%;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    gap: 1rem;
+    align-items: center;
+    background-color: $color-black;
+    font-size: 1.6rem;
+    padding: 1.4rem 1.2rem;
+    width: 100%;
+    border-radius: 5px;
+
+    &--active {
+      .todo__text {
+        text-decoration: line-through;
+        color: $color-icon;
+      }
+      .todo__check {
+        background-color: $color-primary;
+
+        ion-icon {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #todo__checkbox {
+    display: none;
+
+    &:checked + .todo__check {
+      background-color: $color-primary;
+
+      ion-icon {
+        display: block;
+      }
+    }
+    &:checked ~ .todo__text {
+      text-decoration: line-through;
+      color: $color-icon;
+    }
+  }
+
+  &__check {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $color-primary;
+    background-color: transparent;
+    cursor: pointer;
+
+    ion-icon {
+      font-size: 1.6rem;
+      color: $color-black;
+      display: none;
+    }
+  }
+
+  &__delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: $color-icon;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: red;
+      scale: 1.1;
+    }
+  }
+}

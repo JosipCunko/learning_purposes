@@ -1,0 +1,36 @@
+.elements__tags {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
+  font-weight: 700;
+  font-family: Poppins;
+
+  &--tag {
+    &--1 {
+      border-radius: 100px;
+      background-color: $color-primary-100;
+      color: $color-primary-500;
+      font-weight: 800;
+      padding: 0.8rem 1.4rem;
+    }
+    &--2 {
+      border-radius: 3px;
+      background-color: #eee;
+      color: #999;
+      padding: 1.2rem 2.4rem;
+    }
+    &--3 {
+      border-radius: 3px;
+      background-color: $color-primary-200;
+      color: darkblue;
+      padding: 1.2rem 2.4rem;
+    }
+    &--4 {
+      border-radius: 100px;
+      background-color: rgb(28, 28, 134);
+      color: rgb(221, 191, 107);
+      padding: 0.8rem 1.4rem;
+    }
+  }
+}

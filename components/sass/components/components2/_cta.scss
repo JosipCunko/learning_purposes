@@ -1,0 +1,108 @@
+.section-cta {
+  width: 80%;
+  margin: 6.2rem auto;
+
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.cta {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 199, 94),
+    rgb(255, 170, 13)
+  );
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  padding: 6rem 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  font-size: 1.6rem;
+  overflow: hidden;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1000;
+  }
+  &__details {
+    margin-bottom: 2.4rem;
+    z-index: 1000;
+    position: relative;
+  }
+  &__btn {
+    padding: 1rem 2rem;
+    color: rgb(253, 170, 16);
+    font-weight: 600;
+    z-index: 1000;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: inherit;
+  }
+
+  &__triangle {
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+
+    &--1 {
+      background-color: rgba(255, 108, 39, 1);
+      left: 4rem;
+      top: -1rem;
+      width: 25rem;
+      height: 110%;
+      z-index: 2;
+    }
+    &--3 {
+      right: 0;
+      background-color: rgba(255, 155, 108, 0.7);
+      top: -10rem;
+      width: 25rem;
+      height: 200%;
+      z-index: 4;
+      rotate: 20deg;
+    }
+    &--2 {
+      background-color: rgba(255, 228, 72, 0.7);
+      left: 25%;
+      top: -6rem;
+      rotate: 135deg;
+      width: 25rem;
+      z-index: 3;
+      height: 80%;
+    }
+    &--4 {
+      background-color: rgba(255, 86, 8, 1);
+      left: -5rem;
+      bottom: -10rem;
+      width: 15rem;
+      height: 15rem;
+      rotate: (90deg);
+      z-index: 1;
+    }
+  }
+  &__box {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    &--1 {
+      background-image: linear-gradient(
+        to bottom,
+        rgb(255, 191, 71),
+        rgb(255, 178, 34)
+      );
+      top: 40%;
+      right: 25%;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.btn:link,
+.btn:visited {
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: $border-radius-small;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: $color-primary-500;
+}

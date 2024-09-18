@@ -1,0 +1,70 @@
+.notes {
+  position: relative;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+  padding: 3.6rem;
+
+  &__add {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1.2rem 2rem;
+    background-color: $color-primary;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    &:active {
+      transform: scale(0.95);
+    }
+    ion-icon {
+      font-size: 1.8rem;
+    }
+  }
+  &__note {
+    background-color: #fff;
+    box-shadow: 0 0 1rem 4px rgba(#000, 0.1);
+    height: 40rem;
+    width: 40rem;
+  }
+  &__tools {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: $color-primary;
+
+    & button {
+      background-color: transparent;
+      border: 0;
+      color: #fff;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+  textarea {
+    outline: none;
+    width: 100%;
+    height: 40rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    border: 0;
+  }
+  &__main {
+    padding: 2rem;
+  }
+}
+.editFalse {
+  overflow-y: hidden;
+  pointer-events: none;
+}

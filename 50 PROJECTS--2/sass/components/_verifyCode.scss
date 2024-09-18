@@ -1,0 +1,45 @@
+.verifyCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+
+  background-color: #555;
+  border: 3px solid $color-primary-dark;
+  border-radius: 11px;
+  padding: 1.6rem;
+  .code {
+    // caret-color: transparent;
+    border-radius: 5px;
+    font-size: 6.4rem;
+    height: 12rem;
+    width: 10rem;
+    appearance: none;
+    font-weight: 300;
+    border: 5px solid #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    text-align: center;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+    &:focus {
+      outline: 5px solid $color-primary-dark;
+      outline-offset: 3px;
+    }
+    &:user-valid {
+      border-color: $color-primary;
+    }
+    &:user-invalid {
+      border-color: $color-secondary-dark;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.weird-card {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+    background-color: #3c2846;
+  }
+  position: relative;
+  width: 32rem;
+  height: 45rem;
+  background-color: #287bff;
+  margin: 3rem;
+
+  border-radius: 2rem;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  box-shadow: 0 1.5rem 0 #fff, inset 0 -1.5rem 0 rgba(#fff, 0.25),
+    0 4.5rem 0 rgba(#000, 0.15);
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14rem;
+    left: -40%;
+    height: 120%;
+    width: 100%;
+    background-image: linear-gradient(90deg, transparent, rgba(#fff, 0.2));
+    transform: rotate(35deg);
+    pointer-events: none;
+    filter: blur(5px);
+  }
+  &:nth-child(1) {
+    background-image: linear-gradient(to bottom, #ff2ae0, #645bf6);
+  }
+  &:nth-child(2) {
+    background-image: linear-gradient(to bottom, #ffec61, #f321d7);
+  }
+  &:nth-child(3) {
+    background-image: linear-gradient(to bottom, #24ff72, #9a4eff);
+  }
+  &__icon {
+    position: relative;
+    width: 14rem;
+    height: 12rem;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #3c2846;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 0 1rem 0 rgba(#000, 0.1), inset 0 -0.8rem 0 #fff;
+    z-index: 1000;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      background: transparent;
+      width: 5rem;
+      height: 5rem;
+      top: 0;
+    }
+    &::before {
+      left: -5rem;
+      border-top-right-radius: 50px;
+      box-shadow: 1.5rem -1.5rem 0 1.5rem #3c2846;
+    }
+    &::after {
+      right: -5rem;
+      border-top-left-radius: 50px;
+      box-shadow: -1.5rem -1.5rem 0 1.5rem #3c2846;
+    }
+    & ion-icon {
+      color: #fff;
+      position: relative;
+      font-size: 8rem;
+      z-index: 10000;
+      --ionicon-stroke-width: 24px;
+    }
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    padding: 3rem;
+    padding-top: 14rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 1.4rem;
+    }
+    p {
+      line-height: 1.5;
+      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
+}

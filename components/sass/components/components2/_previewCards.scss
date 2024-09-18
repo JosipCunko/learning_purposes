@@ -1,0 +1,518 @@
+.preview-card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+  background-color: #eee;
+  padding: 5rem 10rem;
+  font-family: "Popins";
+
+  .preview-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.8rem;
+
+    &__img {
+      grid-row: 1;
+      grid-column: 1;
+      width: 100%;
+    }
+
+    &--1 {
+      padding: 2.4rem;
+      background-color: #fff;
+      border-end-start-radius: 5px;
+
+      &__tag {
+        justify-self: center;
+        margin-top: 3.6rem;
+        font-size: 1.4rem;
+        color: orange;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      &__title {
+        justify-self: center;
+        font-weight: 600;
+        font-size: 2rem;
+        color: #555;
+        text-align: center;
+        margin-inline: 2rem;
+        letter-spacing: -1px;
+      }
+      &__text {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: #777;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      ion-icon {
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        grid-row: 1;
+        grid-column: 1;
+        align-self: end;
+        justify-self: center;
+        transform: translateY(50%);
+        padding: 1rem;
+        color: orange;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgb(255, 236, 202);
+          width: 100%;
+          height: 100%;
+          border-radius: 200px;
+          z-index: -1;
+        }
+      }
+    }
+    &--2 {
+      background-color: #fff;
+      height: min-content;
+      padding: 2rem;
+      align-self: center;
+
+      &__icon {
+        position: relative;
+        justify-self: center;
+        align-self: center;
+
+        &::before {
+          content: "99,998+";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -2rem;
+          background-color: rgb(255, 78, 78);
+          color: #fff;
+          font-weight: 800;
+          font-size: 1.6rem;
+          border: 1px solid #000;
+          padding: 4px 7px;
+          border-radius: 100px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0.4rem;
+          left: 50%;
+          transform: translateX(-45%);
+
+          background-color: #ddd;
+          width: 30%;
+          padding-block: 3px;
+          border-radius: 100px;
+          height: 2px;
+        }
+      }
+      ion-icon {
+        font-size: 9.8rem;
+        color: #777;
+        transform: rotate(-6deg);
+      }
+
+      &__text {
+        font-size: 1.4rem;
+        color: #777;
+        text-align: center;
+
+        span {
+          color: rgb(255, 78, 78);
+        }
+      }
+    }
+    &--3 {
+      align-self: center;
+      justify-self: center;
+      background-color: rgb(255, 235, 198);
+      padding: 1.6rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      justify-content: start;
+      width: 22rem;
+      height: 22rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-family: "Poppins";
+
+      &__title {
+        color: orange;
+        font-size: 3.6rem;
+        font-weight: 500;
+      }
+
+      ion-icon {
+        margin-top: auto;
+        font-size: 6.4rem;
+        color: orange;
+      }
+    }
+    &--4 {
+      justify-self: center;
+      align-self: center;
+      background-color: rgb(21, 21, 29);
+      padding: 4.4rem 3.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: #bbb;
+      font-size: 1.2rem;
+      font-family: "Poppins";
+      height: min-content;
+
+      &__title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      &__icon {
+        position: relative;
+        align-self: start;
+        padding: 0.5rem;
+
+        ion-icon {
+          font-size: 3.2rem;
+          color: #fff;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 9px;
+          background-color: orange;
+        }
+      }
+    }
+    &--5 {
+      background-color: #fff;
+      padding: 1rem;
+      font-family: "Poppins";
+
+      &__img-box {
+        position: relative;
+      }
+
+      &__img {
+        width: 100%;
+        height: 118%;
+        object-fit: cover;
+      }
+      &__content {
+        background-color: #fff;
+        font-size: 1.4rem;
+        padding-top: 1.6rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        clip-path: polygon(75% 0, 75% 50%, 100% 50%, 100% 100%, 0 100%, 0 0);
+      }
+      &__tag {
+        position: absolute;
+        bottom: -0.8rem;
+        left: 0;
+        background-color: orange;
+        color: #fff;
+        padding: 0.6rem 1.4rem 0.6rem 0.4rem;
+        width: min-content;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 600;
+        z-index: 2000;
+
+        ion-icon {
+          font-size: 2.5rem;
+        }
+      }
+      &__author {
+        color: #999;
+        font-weight: 600;
+      }
+      &__title {
+        font-weight: 500;
+        color: #333;
+        line-height: 1.4;
+        width: 70%;
+      }
+      &__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--part {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-weight: 500;
+          color: #999;
+
+          ion-icon {
+            font-size: 2rem;
+            color: orange;
+          }
+        }
+      }
+    }
+    &--6 {
+      background-image: linear-gradient(
+        in lch,
+        rgb(0, 0, 80),
+        rgb(144, 233, 255)
+      );
+      align-self: start;
+
+      font-family: "Lato";
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      padding: 3.6rem 1.2rem;
+      border-radius: 2.5rem;
+      font-size: 1.6rem;
+      color: #fff;
+
+      &__illustration {
+        img {
+          width: 100%;
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      &__title {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 600;
+      }
+      &__details {
+        color: #fff;
+      }
+      &__icon {
+        font-size: 1.6rem;
+        position: relative;
+        align-self: center;
+        padding: 0.6rem;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: rgb(88, 88, 160);
+        }
+      }
+    }
+    &--7 {
+      font-family: "Poppins";
+      color: #333;
+      font-size: 1.2rem;
+
+      padding: 1rem;
+      background-image: linear-gradient(to bottom, #000 0%, #000 50%, #fff 50%);
+      row-gap: 0;
+
+      display: flex;
+      flex-direction: column;
+
+      &__img-box {
+        background-image: linear-gradient(rgba(#000, 0.6), rgba(#000, 0.6)),
+          url("/imgs/people-2--small.jpg");
+        background-size: cover;
+        position: relative;
+        height: 18rem;
+
+        button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 1rem;
+          background-color: #fff;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          cursor: pointer;
+
+          ion-icon {
+            font-size: 2.6rem;
+          }
+        }
+
+        a:link,
+        a:visited {
+          display: inline-block;
+          position: absolute;
+          color: #fff;
+          font-size: 1.4rem;
+          bottom: 5%;
+          left: 50%;
+          cursor: pointer;
+          transform: translateX(-50%);
+        }
+      }
+      &__content {
+        background-color: #fff;
+        box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      &__prices {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: #333;
+        font-weight: 600;
+
+        .main-price {
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
+        .og-price {
+          font-weight: 300;
+          color: #777;
+          font-size: 1.2rem;
+          text-decoration: line-through;
+        }
+      }
+      .time-discount {
+        color: rgb(255, 78, 78);
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: flex;
+        gap: 0.4rem;
+        margin-bottom: 0.6rem;
+        align-items: center;
+      }
+      &__cart,
+      &__buy,
+      .coupon {
+        padding: 1.2rem 2.4rem;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      &__cart {
+        background-color: rgb(255, 78, 78);
+      }
+      &__buy {
+        background-color: #fff;
+        color: rgb(76, 159, 255);
+        border: 1px solid currentColor;
+      }
+      .buy-description {
+        text-align: center;
+        font-size: 1rem;
+        color: #777;
+        margin-top: 0.6rem;
+      }
+      &__details {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+
+        &--list {
+          margin-top: 0.6rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+      &__item {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+      }
+      .coupon {
+        border: none;
+        color: rgb(76, 159, 255);
+        background-color: #fff;
+      }
+    }
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(#000, 0.7) 0%,
+          transparent 50%,
+          rgba(#000, 0.7) 90%
+        ),
+        url("https://assets.porsche.com/hr/zagreb/-/media/Project/DealerWebsites/Croatia/Zagreb/Image-grid-with-CTA/models/new-panamera-cta.jpg?rev=f0277d2e663b40f9bcfe797469960c4b&w=590");
+      background-size: cover;
+      background-position: center;
+
+      width: 30rem;
+      height: 25rem;
+      color: #fff;
+
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &--content {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: Lato;
+      }
+      &--title {
+        font-size: 2.4rem;
+        display: block;
+        margin-bottom: 0.6rem;
+      }
+      &--buttons {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+        a:link,
+        a:visited {
+          padding: 1.2rem 1.4rem;
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+
+          &:first-child {
+            background-color: #fff;
+            color: #000;
+          }
+
+          &:last-child {
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
